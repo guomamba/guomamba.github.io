@@ -46,10 +46,24 @@
 .list_item{
     width: 120px;
 }
+.selected{
+    background-color: #555555;
+    font-size: 22px;
+    color: #fff;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.list_item_selected a{
+    width: 120px;
+    height: 60px;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle; 
+}
 .list_item a{
     width: 120px;
     height: 60px;
-    text-align: right;
+    text-align: center;
     display: table-cell;
     vertical-align: middle; 
     font-size: 20px;
@@ -73,6 +87,38 @@
     width: 99999px;
     display: flex;
     flex-direction: row;
+}
+.btn_left{
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: 6px;
+    margin-top: 165px;
+    margin-left: 20px;
+}
+.btn_left:hover{
+    opacity: 0.5;
+    background-color: #626F8A;
+}
+.btn_right{
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: 6px;
+    margin-top: 165px;
+    margin-left: 990px;
+}
+.btn_right:hover{
+    opacity: 0.5;
+    background-color: #626F8A;
 }
 .banner .banner_autoplay{
     animation: marginLeft 42s infinite;

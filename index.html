@@ -20,11 +20,11 @@
                 </div>
                 <div class="content">
                     <ul class="list">
-                        <li class="list_item"><a href="/">首页</a></li>
-                        <li class="list_item"><a href="/code">编程</a></li>
-                        <li class="list_item"><a href="/travel">旅行</a></li>
-                        <li class="list_item"><a href="/game">游戏</a></li>
-                        <li class="list_item"><a href="/about">关于</a></li>
+                        <li class="list_item_selected"><a class="selected" href="/">首页</a></li>
+                        <li class="list_item"><a href="/page/code">编程</a></li>
+                        <li class="list_item"><a href="/page/travel">旅行</a></li>
+                        <li class="list_item"><a href="/page/game">游戏</a></li>
+                        <li class="list_item"><a href="/page/about">关于</a></li>
                     </ul>
                 </div>
             </div>
@@ -43,13 +43,15 @@
                     <li><img id="image8" class="banner_image"></li>
                     <li><img id="image9" class="banner_image"></li>
                 </ul>
+                <img id="image_left" class="btn_left" src="images/left.png">
+                <img id="image_right" class="btn_right" src="images/right.png">
             </div>
         </div>
         <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
         <script type="text/javascript">
             $.ajax({
                 type: 'GET',
-                url: 'http://www.hjmin.com/banner?type=0',
+                url: 'http://localhost:3000/banner',
                 data: '',
                 dataType: 'JSON',
                 success: function (res) {
@@ -65,6 +67,12 @@
                 error: function () {
                     alert("网络连接失败！")
                 }
+            });
+            $("#image_left").click(function(){
+                alert("clicked!")
+            });
+            $("#image_right").click(function(){
+                alert("clicked!")
             });
         </script>
     </body>
