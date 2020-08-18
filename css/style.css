@@ -59,3 +59,91 @@
     font-size: 22px;
     color: #fff;
 }
+.banner-background{
+    height: 400px;
+    background-color: #ADB4D5;
+}
+.banner{
+    margin: 0 auto;
+    position: relative;
+    width: 1080px;
+    overflow: hidden;
+}
+.banner ul {
+    width: 99999px;
+    display: flex;
+    flex-direction: row;
+}
+.banner .banner_autoplay{
+    animation: marginLeft 42s infinite;
+}
+.banner li{
+    width: 1080px;
+    height: 400px;
+    list-style: none;
+}
+@keyframes marginLeft{
+    0% {
+        margin-left: 0;
+    }
+    8% {
+        margin-left: 0;
+    }
+    10% {
+        margin-left: -1080px;
+    }
+    18% {
+        margin-left: -1080px;
+    }
+    20% {
+        margin-left: -2160px;
+    }
+    28% {
+        margin-left: -2160px;
+    }
+    30% {
+        margin-left: -3240px;
+    }
+    38% {
+        margin-left: -3240px;
+    }
+    40% {
+        margin-left: -4320px;
+    }
+    48% {
+        margin-left: -4320px;
+    }
+    50% {
+        margin-left: -5400px;
+    }
+    58% {
+        margin-left: -5400px;
+    }
+    60% {
+        margin-left: -6480px;
+    }
+    68% {
+        margin-left: -6480px;
+    }
+    70% {
+        margin-left: -7560px;
+    }
+    78% {
+        margin-left: -7560px;
+    }
+    80% {
+        margin-left: -8640px;
+    }
+    88% {
+        margin-left: -8640px;
+    }
+    90% {
+        margin-left: -9720px;
+    }
+    98% {
+        margin-left: -9720px;
+    }
+    100% {
+        margin-left: 0px;
+    }
+}

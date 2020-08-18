@@ -21,35 +21,46 @@
                 <div class="content">
                     <ul class="list">
                         <li class="list_item"><a href="/">首页</a></li>
-                        <li class="list_item"><a href="/">编程</a></li>
-                        <li class="list_item"><a href="/">旅行</a></li>
-                        <li class="list_item"><a href="/">游戏</a></li>
-                        <li class="list_item"><a href="/">关于</a></li>
+                        <li class="list_item"><a href="/code">编程</a></li>
+                        <li class="list_item"><a href="/travel">旅行</a></li>
+                        <li class="list_item"><a href="/game">游戏</a></li>
+                        <li class="list_item"><a href="/about">关于</a></li>
                     </ul>
                 </div>
             </div>
         </header>
-        <div class="banner">
-            <ul class="banner_autoplay">
-                <li><img src=""></li>
-            </ul>
+        <div class="banner-background">
+            <div class="banner">
+                <ul class="banner_autoplay">
+                    <li><img id="image0" class="banner_image"></li>
+                    <li><img id="image1" class="banner_image"></li>
+                    <li><img id="image2" class="banner_image"></li>
+                    <li><img id="image3" class="banner_image"></li>
+                    <li><img id="image4" class="banner_image"></li>
+                    <li><img id="image5" class="banner_image"></li>
+                    <li><img id="image6" class="banner_image"></li>
+                    <li><img id="image7" class="banner_image"></li>
+                    <li><img id="image8" class="banner_image"></li>
+                    <li><img id="image9" class="banner_image"></li>
+                </ul>
+            </div>
         </div>
         <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
         <script type="text/javascript">
             $.ajax({
                 type: 'GET',
-                url: 'http://localhost:3000/banner?type=0',
+                url: 'http://www.hjmin.com/banner?type=0',
                 data: '',
                 dataType: 'JSON',
                 success: function (res) {
-                    console.log(res.banners);
                     var banners = res.banners;
                     var arr = new Array()
                     for(var i=0;i<banners.length;i++){
-                        console.log(banners[i].imageUrl)
-                        arr.add(banners[i].imageUrl)
+                        arr.push(banners[i].imageUrl)
                     }
-                    console.log(arr)
+                    for (var index = 0; index < arr.length+1; index++) {
+                        $("#image"+index).attr("src",arr[index]);               
+                    }
                 },
                 error: function () {
                     alert("网络连接失败！")
