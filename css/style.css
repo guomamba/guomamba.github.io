@@ -1,29 +1,19 @@
-html,body,ul,li,ol,dl,dd,dt,p,h1,h2,h3,h4,h5,h6,form,img{
-    margin: 0;
-    padding: 0;
-}
-img{
-    border: none;
-}
-ul,ol{
-    list-style: none;
-}
-input{
-    padding-top: 0;
-    padding-bottom: 0;
-    border: none;
-}
-a{
-    text-decoration: none;
-}
 .main{
     background-color: #fff;
     background-size: 100%;
+}
+.center{
+    width: 1000px;
+    margin: 0 auto;
 }
 .navigator{
     width: 100%;
     height: 60px;
     background-color: rgb(29, 32, 37);
+    display: flex;
+    flex-direction: row;
+}
+.navigator_content{
     display: flex;
     flex-direction: row;
 }
@@ -34,8 +24,8 @@ a{
 }
 .logo_img{
     height: 46px;
-    margin: 7px;
-    margin-left: 50px;
+    margin-top: 7px;
+    margin-bottom: 7px;
     transition: all 0.2s ease-in-out;
 }
 .logo_img:hover{
@@ -45,7 +35,7 @@ a{
     text-align: center;
 }
 .content{
-    width: 800px;
+    width: 750px;
 }
 .list{
     width: 600px;
@@ -57,7 +47,11 @@ a{
     width: 120px;
 }
 .list_item a{
-    line-height: 60px;
+    width: 120px;
+    height: 60px;
+    text-align: right;
+    display: table-cell;
+    vertical-align: middle; 
     font-size: 20px;
     color: #969fa9;
 }
