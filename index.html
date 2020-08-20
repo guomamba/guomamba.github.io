@@ -6,6 +6,7 @@
         <title>Manba</title>
         <link rel="stylesheet" href="css/common.css">
         <link rel="stylesheet" href="css/style.css">
+        <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
         <script src="js/index.js"></script>
     </head>
     <body class="main">    
@@ -23,7 +24,7 @@
                         <li class="list_item_selected"><a class="selected" href="/">首页</a></li>
                         <li class="list_item"><a href="/page/code">编程</a></li>
                         <li class="list_item"><a href="/page/travel">旅行</a></li>
-                        <li class="list_item"><a href="/page/game">游戏</a></li>
+                        <li class="list_item"><a href="/page/discover">发现</a></li>
                         <li class="list_item"><a href="/page/about">关于</a></li>
                     </ul>
                 </div>
@@ -47,33 +48,6 @@
                 <img id="image_right" class="btn_right" src="images/right.png">
             </div>
         </div>
-        <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
-        <script type="text/javascript">
-            $.ajax({
-                type: 'GET',
-                url: 'https://www.fastmock.site/mock/cc0127486cffdd267c3b52d02ae3907f/mysite/banner',
-                data: '',
-                dataType: 'JSON',
-                success: function (res) {
-                    var banners = res.banners;
-                    var arr = new Array()
-                    for(var i=0;i<banners.length;i++){
-                        arr.push(banners[i].imageUrl)
-                    }
-                    for (var index = 0; index < arr.length+1; index++) {
-                        $("#image"+index).attr("src",arr[index]);               
-                    }
-                },
-                error: function () {
-                    alert("网络连接失败！")
-                }
-            });
-            $("#image_left").click(function(){
-                alert("clicked!")
-            });
-            $("#image_right").click(function(){
-                alert("clicked!")
-            });
-        </script>
+        <!--  <audio src="http://m7.music.126.net/20200819143644/9dc60844ac45fc0a69467c62c83fb298/ymusic/44e8/457a/1739/686526cabcda83a10fba5a95512beb5f.mp3" autoplay="autoplay" preload="auto"></audio> -->
     </body>
 </html>    
