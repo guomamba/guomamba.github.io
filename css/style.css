@@ -239,22 +239,47 @@
 }
 .article_panel{
     font-size: 14px;
-    height: 146px;
+    height: 72px;
 }
 .article_title{
     color: #202020;
     display: block;
     font-size: 18px;
     line-height: 28px;
-    max-height: 56px;
+    max-height: 28px;
     overflow: hidden;
     font-weight: 500!important;
 }
 .article_digest{
     font-size: 12px;
     line-height: 22px;
-    height: 45px;
+    height: 44px;
     display: block;
     overflow: hidden;
     color: #757779;
+}
+.tools{
+    border-top: 1px solid #edeeee;
+    margin-top: 6px;
+    height: 32px;
+    color: #a5a7aa;
+    font-size: 12px;
+}
+.ariticle_author{
+    white-space: nowrap;
+    color: #a5a7aa;
+    display: inline-block;
+    line-height: 32px;
+    margin-left: 5px;
+}
+.count{
+    margin-right: 15px;
+    height: 25px;
+    float: right;
+    color: #a5a7aa;
+}
+.num{
+    line-height: 32px;
+    float: left;
+    font-size: 12px;
 }

@@ -51,7 +51,7 @@ $.ajax("json/Article.json",{
         var imageList = new Array()
         var timeList = new Array()
         var image = new Array()
-        for (let index = 0; index < 9; index++) {
+        for (let index = 0; index < item.length; index++) {
             titleList.push(item[index].content.news_item[0].title)
             authorList.push(item[index].content.news_item[0].author)
             digestList.push(item[index].content.news_item[0].digest)
@@ -63,8 +63,9 @@ $.ajax("json/Article.json",{
                 $("#article_digest"+index).text("什么都没有")
             }
             else{
-                $("#article_digest"+index).text(titleList[index])
+                $("#article_digest"+index).text(digestList[index])
             }
+            $("#article_author"+index).text(authorList[index])
         }
     }
 })
