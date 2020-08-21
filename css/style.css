@@ -193,3 +193,34 @@
         margin-left: 0px;
     }
 }
+.container{
+    height: 50px;
+}
+.main_title{
+    font-size: 22px;
+    line-height: 50px;
+    text-align: center;
+    font-weight: 600;
+}
+.article{
+    height: 1500px;
+}
+.row{
+    height: 100%;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.article_wrap{
+    height: 33.333333%;
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+}
+.article_item{
+    overflow: hidden;
+    margin-bottom: 40px;
+}

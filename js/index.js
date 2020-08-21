@@ -45,6 +45,18 @@ $.ajax("json/Article.json",{
     async: 'false',
     success: function(data){			
         var item = data.item;   
-        console.log(item)
+        var titleList = new Array()
+        var authorList = new Array()
+        var digestList = new Array()
+        var imageList = new Array()
+        var timeList = new Array()
+        for (let index = 0; index < item.length; index++) {
+            titleList.push(item[index].content.news_item[0].title)
+            authorList.push(item[index].content.news_item[0].author)
+            digestList.push(item[index].content.news_item[0].digest)
+            imageList.push(item[index].content.news_item[0].thumb_url)
+            timeList.push(item[index].update_time)           
+        }
+        console.log(titleList,authorList,digestList,imageList,timeList)
     }
 })
