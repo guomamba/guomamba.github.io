@@ -16,8 +16,8 @@ $.ajax({
             arr.push(banners[i].imageUrl)
         }
         for (var index = 0; index < arr.length+1; index++) {
-            $("#image"+index).attr("src",arr[index]);  
-            $("#image"+index).click(function(){
+            $("#banner_image"+index).attr("src",arr[index]);  
+            $("#banner_image"+index).click(function(){
                 location.href='http://www.baidu.com'
             })             
         }
@@ -50,13 +50,21 @@ $.ajax("json/Article.json",{
         var digestList = new Array()
         var imageList = new Array()
         var timeList = new Array()
-        for (let index = 0; index < item.length; index++) {
+        var image = new Array()
+        for (let index = 0; index < 9; index++) {
             titleList.push(item[index].content.news_item[0].title)
             authorList.push(item[index].content.news_item[0].author)
             digestList.push(item[index].content.news_item[0].digest)
-            imageList.push(item[index].content.news_item[0].thumb_url)
-            timeList.push(item[index].update_time)           
+            imageList.push(item[index].content.news_item[0].thumb_url.replace("http","https"))
+            timeList.push(item[index].update_time)    
+            $("#article_image"+index).attr("src",imageList[index]);          
+            $("#article_title"+index).text(titleList[index]);
+            if(digestList[index]==''){
+                $("#article_digest"+index).text("什么都没有")
+            }
+            else{
+                $("#article_digest"+index).text(titleList[index])
+            }
         }
-        console.log(titleList,authorList,digestList,imageList,timeList)
     }
 })
