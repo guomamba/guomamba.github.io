@@ -26,18 +26,6 @@ $.ajax({
         alert("网络连接失败！")
     }
 });
-function getJsonData(){
-    $.ajax("json/Article.json",{
-		data: {},
-		dataType: 'json',
-		type: 'get',
-		async: 'false',
-		success: function(data){			
-            var item = data.item;   
-            console.log(item)
-        }
-    })
-}
 $.ajax("json/Article.json",{
     data: {},
     dataType: 'json',
@@ -50,7 +38,6 @@ $.ajax("json/Article.json",{
         var digestList = new Array()
         var imageList = new Array()
         var timeList = new Array()
-        var image = new Array()
         for (let index = 0; index < item.length; index++) {
             titleList.push(item[index].content.news_item[0].title)
             authorList.push(item[index].content.news_item[0].author)
@@ -69,3 +56,25 @@ $.ajax("json/Article.json",{
         }
     }
 })
+function timestampTotime(timestamp,type=0) {
+    var time = new Date(timestamp*1000)
+    var year = time.getFullYear()
+    var month = time.getMonth() + 1
+    var date = time.getDate()
+    var hour = time.getHours()
+    var minute = time.getMinutes()
+    var second = time.getSeconds()
+    month = month < 10 ? "0" + month : month;
+    date = date < 10 ? "0" + date : date;
+    hour = hour < 10 ? "0" + hour : hour;
+    minute = minute < 10 ? "0" + minute : minute;
+    second = second < 10 ? "0" + second : second;
+    var arr = [
+        year + "-" + month + "-" + date + " " + hour + ":" + minute + ":" + second,
+        year + "年" + month + "月" + date + " " + hour + ":" + minute + ":" + second,
+        year + "年" + month + "月" + date + "日",
+        hour + ":" + minute + ":" + second,     
+        year + "-" + month + "-" + date
+    ]
+    return arr[type]
+}
