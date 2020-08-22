@@ -1,9 +1,3 @@
-$("#image_left").click(function(){
-    alert("clicked!")
-});
-$("#image_right").click(function(){
-    //todo
-});
 $.ajax({
     type: 'GET',
     url: 'https://www.fastmock.site/mock/cc0127486cffdd267c3b52d02ae3907f/mysite/banner',
@@ -77,4 +71,10 @@ function timestampTotime(timestamp,type=0) {
         year + "-" + month + "-" + date
     ]
     return arr[type]
+}
+function left_btnClick() {
+    alert("clicked!")    
+}
+function right_btnClick() {
+    alert("clicked!")    
 }

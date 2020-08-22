@@ -9,6 +9,25 @@
         <link rel="stylesheet" href="css/style.css">
         <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
         <script src="js/index.js"></script>
+        <script>
+        $(document).ready(function(){
+            $("#image_left").click(function(){
+                left_btnClick()
+            });
+            $("#image_right").click(function(){
+                right_btnClick()
+            });
+            $("#tag_text0").text("生活")
+            $("#article_image0").mouseover(function(){
+                $("#article_image0").fadeTo(100,0.8)
+                $(".article_tag").hide();
+            });
+            $("#article_image0").mouseleave(function(){
+                $("#article_image0").fadeTo(100,1)
+                $(".article_tag").show();
+            });
+        })
+        </script>
     </head>
     <body class="main">    
         <header class="navigator">
@@ -56,6 +75,9 @@
             <div class="row center">
                 <div class="article_wrap">
                     <div class="article_item">
+                        <a href="/category" class="article_tag">
+                            <span id="tag_text0" class="tag_text"></span>
+                        </a>
                         <div class="pic_box">
                             <a href="/page/article">
                                 <div class="cover">

@@ -226,6 +226,18 @@
     overflow: hidden;
     margin-bottom: 40px;
     margin: 15px;
+    position: relative;
+}
+.article_tag{
+    background-color: #CBA0AA;
+    position: absolute;
+    height: 24px;
+    width: 48px;
+}
+.tag_text{
+    color: #fff;
+    font-size: 12px;
+    margin: 12px;
 }
 .pic_box{
     width: 100%;
@@ -236,6 +248,9 @@
 .article_image{
     width: 100%;
     height:220px;
+}
+.article_image:hover{
+    opacity: 0.8;
 }
 .article_panel{
     font-size: 14px;
