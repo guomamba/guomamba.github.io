@@ -1,0 +1,26 @@
+.main{
+    width: 1366px;
+    height: 635px;
+    background-color: rgb(47, 58, 90);
+    overflow: hidden;
+}
+.background{
+    width: 1100px;
+    margin: 0 auto;
+    position: relative;
+}
+.background_image{
+    width: 0px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+.cartoon_img{
+    position: absolute;
+    margin-top: 635px;
+    width: 600px;
+    margin-left: 260px;
+}
