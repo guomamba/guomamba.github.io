@@ -11,6 +11,7 @@
     <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://blog-static.cnblogs.com/files/zhoujl-5071/jquery.rotate.js"></script>
     <script src="../js/love.js"></script>
+    <script src="../js/snowfall.jquery.js"></script>
 </head>
 <body>
     <div id="main" class="main">
@@ -26,7 +27,27 @@
                 <img id="photo_0" class="photo_display" src="../images/lele.png">
             </div>
         </div>
+        <div id="background3" class="background3"></div>
+        <div id="background4" class="background4">
+            <div class="left">
+                <img class="together" src="../images/together.jpg">
+            </div>
+            <div class="right">
+                <img class="showLove" src="../images/showLove.png">
+                <img id="myheart" src="../images/mini_heart.png" class="myheart">
+                <text class="title">七<br>夕<br>快<br>乐<br>！</text>
+            </div>
+        </div>
     </div>
+    <script>
+        $(document).snowfall('clear');
+        $(document).snowfall({
+            image: "../images/mini_heart.png",
+            flakeCount:30,
+            minSize: 5,
+            maxSize: 22
+        });
+    </script>
     <audio src="../audio/All Falls Down.m4a" autoplay="autoplay" preload="auto"></audio>
 </body>
 </html>

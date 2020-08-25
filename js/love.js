@@ -64,8 +64,53 @@ $(document).ready(function(){
             mini_heart.animate({marginLeft: '400px',marginTop: '60px',height: '53px',width: '60px',opacity: '1'},1000,next)
         },
         function(){
-            mini_heart.fadeOut()
-            $(".frame").fadeTo(500,1)
+            mini_heart.fadeTo(100,0)
+            mini_heart.animate({marginLeft: '200px',marginTop: '80px',height: '18px',width: '20px'})
+            $(".frame").fadeTo(500,1,next)
+        },
+        function(){
+            finger.rotate({center:["0","100%"],animateTo: -15,duration: 200,callback: next})
+        },
+        function(){
+            finger.rotate({center:["0","100%"],animateTo: 0,duration: 100,callback: next})
+        },
+        function(){
+            mini_heart.fadeTo(100,0.5)
+            mini_heart.animate({marginLeft: '400px',marginTop: '60px',height: '53px',width: '60px',opacity: '1'},1000)
+            $(".frame").fadeTo(500,0,next)
+        },
+        function(){
+            mini_heart.fadeTo(100,0,next)
+            mini_heart.animate({marginLeft: '200px',marginTop: '80px',height: '18px',width: '20px'})
+        },
+        function(){
+            $('#photo_0').attr("src","../images/lele_1.png")
+            $(".frame").fadeTo(500,1,next)
+        },
+        function(){
+            $('#background3').animate({marginBottom: '0px',height: '100%',width: '100%'},1000,next)
+            $('#background2').remove();
+        },
+        function(){
+            $('#background4').animate({marginLeft: '0px',height: '100%',width: '100%'},1000,next)
+            $('#background3').remove();
+        },
+        function(){
+            $(".showLove").fadeTo(1000,1,next)
+        },
+        function(){
+            $(".myheart").fadeTo(500,0.8,next)
+        },
+        function(){
+            $(".myheart").animate({marginLeft: '-=30px',marginTop: '-=30px',height: '+=50px',width: '+=60px'})
+            $(".together").fadeTo(1000,1,next)
+        },
+        function(){
+            $(".title").fadeTo(1000,1)
+            $(".myheart").animate({marginLeft: '+=30px',marginTop: '+=30px',height: '-=50px',width: '-=60px'},200,next)
+        },
+        function(){
+            $(".myheart").animate({marginLeft: '-=30px',marginTop: '-=30px',height: '+=50px',width: '+=60px'})
         }
     ]
     function next(){

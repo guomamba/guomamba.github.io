@@ -44,6 +44,7 @@
 }
 .mini_heart{
     width: 20px;
+    height: 18px;
     position: absolute;
     margin-top: 80px;
     margin-left: 200px; 
@@ -57,7 +58,63 @@
     border:5px solid #ffffff;
     opacity: 0;
     overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .photo_display{
+    width: 100%; 
+    height: 100%;
+    object-fit:cover;
+}
+.background3{
     width: 100%;
+    margin: 0 auto;
+    position: relative;
+    background-image: url(../images/buildings.jpg);
+}
+.background4{
+    width: 1366px;
+    height: 635px;
+    position: relative;
+    margin-left: 1366px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+}
+.left{
+    width: 460px;
+    height: 100%;
+    background-color: #ffffff;
+}
+.together{
+    width: 400px;
+    height: 575px;
+    border: 30px solid #fff;
+    object-fit: cover;
+    opacity: 0;
+}
+.right{
+    width: 906px;
+    height: 100%;
+    background-color: #FEE4E2;
+    position: relative;
+}
+.showLove{
+    position: absolute;
+    margin: 20px 250px;
+    opacity: 0;
+}
+.myheart{
+    width: 20px;
+    position: absolute;
+    margin: 250px 390px;
+    opacity: 0;
+}
+.title{
+    position: absolute;
+    margin: 180px 100px;
+    font-size: 36px;
+    text-align: center;
+    opacity: 0;
 }
