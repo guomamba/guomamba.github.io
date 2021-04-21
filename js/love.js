@@ -84,7 +84,7 @@ $(document).ready(function(){
             mini_heart.animate({marginLeft: '200px',marginTop: '80px',height: '18px',width: '20px'})
         },
         function(){
-            $('#photo_0').attr("src","../images/lele_1.png")
+            $('#photo_0').attr("src","../images/Haruko_Akagi.jpg")
             $(".frame").fadeTo(500,1,next)
         },
         function(){
