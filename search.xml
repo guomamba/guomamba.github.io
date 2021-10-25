@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>自用图床搭建</title>
+      <link href="/2021/10/25/imgurl/"/>
+      <url>/2021/10/25/imgurl/</url>
+      
+        <content type="html"><![CDATA[<h1 id="GitHub-PicGo搭建个人图床"><a href="#GitHub-PicGo搭建个人图床" class="headerlink" title="GitHub+PicGo搭建个人图床"></a>GitHub+PicGo搭建个人图床</h1><ul><li>下载PicGo</li></ul><p>PicGo下载地址：<a href="https://github.com/Molunerfinn/picgo/releases" title="下载地址">下载地址(需要翻墙)</a>  <a href="https://pan.baidu.com/s/1vyl9ZrwAVEQw-c5I7UmwJQ" title="下载地址">百度云下载(提取码：dnd1)</a></p><p><img src="https://cdn.jsdelivr.net/gh/guomamba/PicGoCDN/img/20211025172003.png"></p><ul><li>创建GitHub仓库</li></ul><p><img src="https://cdn.jsdelivr.net/gh/guomamba/PicGoCDN/img/20211025172548.png"></p><ul><li><p>获取Personal access tokens</p><p>  点自己头像，然后点Setting<br><img src="https://cdn.jsdelivr.net/gh/guomamba/PicGoCDN/img/20211025173236.png"></p><p>  选择Developer settings，再选择Personal access tokens.<br><img src="https://cdn.jsdelivr.net/gh/guomamba/PicGoCDN/img/20211025173609.png"><br>  点击Generate new token,勾选repo,创建token.<br><img src="https://cdn.jsdelivr.net/gh/guomamba/PicGoCDN/img/20211025173841.png"><br>  创建成功后，复制token(离开该页面后token无法再显示).</p></li><li><p>配置PicGo</p><p>  安装PicGo.<br><img src="https://cdn.jsdelivr.net/gh/guomamba/PicGoCDN/img/20211025174245.png"><br>  安装完成后打开图床设置，选择GitHub图床。<br><img src="https://cdn.jsdelivr.net/gh/guomamba/PicGoCDN/img/20211025174449.png"><br>  仓库名：输入github用户名/仓库名<br>  分支名：按照github仓库内容填写<br>  Token: 复制刚才生成的Token<br>  存储路径：设置图片存储的位置，相当于文件夹<br>  设定自定义域名：</p>  <pre class="line-numbers language-none"><code class="language-none">https://cdn.jsdelivr.net/gh/用户名/仓库名<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></li></ul><p> 至此，设置完成。PicGo支持多种上传方式，包括拖拽、剪贴板以及URL的方式。同时也可以设置要用的链接格式，包括Markdown、HTML、URl等多种格式。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 工具软件 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 图床 </tag>
+            
+            <tag> GitHub </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Personal Homepage</title>
       <link href="/2021/10/24/personal-homepage/"/>
       <url>/2021/10/24/personal-homepage/</url>
@@ -20,6 +47,8 @@
       
         <tags>
             
+            <tag> GitHub </tag>
+            
             <tag> 生活 </tag>
             
         </tags>
@@ -33,7 +62,7 @@
       <link href="/2021/10/24/happy-1024/"/>
       <url>/2021/10/24/happy-1024/</url>
       
-        <content type="html"><![CDATA[<h4 id=""><a href="#" class="headerlink" title=""></a></h4><p>Happy 1024<br>####</p><hr><p><img src="https://w.wallhaven.cc/full/6o/wallhaven-6ooq76.png" alt="avatar"></p>]]></content>
+        <content type="html"><![CDATA[<h1 id="Happy-1024"><a href="#Happy-1024" class="headerlink" title="Happy 1024"></a>Happy 1024</h1><p><img src="https://w.wallhaven.cc/full/6o/wallhaven-6ooq76.png" alt="avatar"></p>]]></content>
       
       
       
