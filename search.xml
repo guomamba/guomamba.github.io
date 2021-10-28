@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>Go Web</title>
+      <link href="/2021/10/27/go-web/"/>
+      <url>/2021/10/27/go-web/</url>
+      
+        <content type="html"><![CDATA[<h1 id="Go语言Web开发入坑"><a href="#Go语言Web开发入坑" class="headerlink" title="Go语言Web开发入坑"></a>Go语言Web开发入坑</h1><ul><li><p>Windows下Go语言环境安装<br>  *[^_^]: (环境安装很多坑，我搞了一晚上才成功T_T)</p></li><li><p>Go语言基础语法</p><ul><li><p>递归函数</p><pre class="line-numbers language-Golang" data-language="Golang"><code class="language-Golang">package mainimport "fmt"func fab(i int) int {    if i == 0 {        return 0    } else {        if i == 1 {            return 1        } else {            return fab(i-1) + fab(i-2)        }    }}func main() {    var n int    fmt.Scanln(&amp;n)    fmt.Println(fab(n))}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></li><li><p>延迟调用defer</p><pre class="line-numbers language-Golang" data-language="Golang"><code class="language-Golang">package mainimport "fmt"func main() {    // defer最为延时调用，main函数结束之前调用，可使用多个defer（类似于堆栈结构，先进后出）    defer fmt.Println("延时输出")    fmt.Println("输出")}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></li><li></li></ul></li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> Web </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Golang </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>自用图床搭建</title>
       <link href="/2021/10/25/imgurl/"/>
       <url>/2021/10/25/imgurl/</url>
