@@ -6,7 +6,7 @@
   <link href="http://guomamba.github.io/atom.xml" rel="self"/>
   
   <link href="http://guomamba.github.io/"/>
-  <updated>2021-10-29T18:02:20.579Z</updated>
+  <updated>2021-11-06T09:54:35.180Z</updated>
   <id>http://guomamba.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>rainmeter</title>
+    <link href="http://guomamba.github.io/2021/11/05/rainmeter/"/>
+    <id>http://guomamba.github.io/2021/11/05/rainmeter/</id>
+    <published>2021-11-05T11:34:51.000Z</published>
+    <updated>2021-11-06T09:54:35.180Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;WIndows桌面美化工具-Rainmeter&quot;&gt;&lt;a href=&quot;#WIndows桌面美化工具-Rainmeter&quot; class=&quot;headerlink&quot; title=&quot;WIndows桌面美化工具: Rainmeter&quot;&gt;&lt;/a&gt;WIndows桌面美化工具:</summary>
+        
+      
+    
+    
+    
+    <category term="工具软件" scheme="http://guomamba.github.io/categories/%E5%B7%A5%E5%85%B7%E8%BD%AF%E4%BB%B6/"/>
+    
+    
+    <category term="桌面美化" scheme="http://guomamba.github.io/tags/%E6%A1%8C%E9%9D%A2%E7%BE%8E%E5%8C%96/"/>
+    
+  </entry>
   
   <entry>
     <title>Go Web</title>
