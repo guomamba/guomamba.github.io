@@ -6,7 +6,7 @@
   <link href="http://guomamba.github.io/atom.xml" rel="self"/>
   
   <link href="http://guomamba.github.io/"/>
-  <updated>2021-11-06T09:54:35.180Z</updated>
+  <updated>2021-11-08T08:25:00.343Z</updated>
   <id>http://guomamba.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Leetcode romanToInt</title>
+    <link href="http://guomamba.github.io/2021/11/08/leetcode-romantoint/"/>
+    <id>http://guomamba.github.io/2021/11/08/leetcode-romantoint/</id>
+    <published>2021-11-08T07:28:47.000Z</published>
+    <updated>2021-11-08T08:25:00.343Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;罗马数字转整数&quot;&gt;&lt;a href=&quot;#罗马数字转整数&quot; class=&quot;headerlink&quot; title=&quot;罗马数字转整数&quot;&gt;&lt;/a&gt;罗马数字转整数&lt;/h1&gt;&lt;p&gt;罗马数字包含以下七种字符: I， V， X， L，C，D 和</summary>
+        
+      
+    
+    
+    
+    <category term="编程之道" scheme="http://guomamba.github.io/categories/%E7%BC%96%E7%A8%8B%E4%B9%8B%E9%81%93/"/>
+    
+    
+    <category term="Leetcode" scheme="http://guomamba.github.io/tags/Leetcode/"/>
+    
+  </entry>
   
   <entry>
     <title>rainmeter</title>
