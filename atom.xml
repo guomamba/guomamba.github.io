@@ -6,7 +6,7 @@
   <link href="http://guomamba.github.io/atom.xml" rel="self"/>
   
   <link href="http://guomamba.github.io/"/>
-  <updated>2021-11-08T08:25:00.343Z</updated>
+  <updated>2021-11-15T07:51:46.718Z</updated>
   <id>http://guomamba.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Electron</title>
+    <link href="http://guomamba.github.io/2021/11/09/electron/"/>
+    <id>http://guomamba.github.io/2021/11/09/electron/</id>
+    <published>2021-11-09T07:15:57.000Z</published>
+    <updated>2021-11-15T07:51:46.718Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;Electron&quot;&gt;&lt;a href=&quot;#Electron&quot; class=&quot;headerlink&quot; title=&quot;Electron&quot;&gt;&lt;/a&gt;Electron&lt;/h1&gt;&lt;h2 id=&quot;主进程&quot;&gt;&lt;a href=&quot;#主进程&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="前端" scheme="http://guomamba.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+    <category term="Electron" scheme="http://guomamba.github.io/tags/Electron/"/>
+    
+  </entry>
   
   <entry>
     <title>Leetcode romanToInt</title>
@@ -71,7 +96,7 @@
     <link href="http://guomamba.github.io/2021/10/27/go-web/"/>
     <id>http://guomamba.github.io/2021/10/27/go-web/</id>
     <published>2021-10-26T18:20:47.000Z</published>
-    <updated>2021-10-29T18:02:20.579Z</updated>
+    <updated>2021-11-09T07:22:39.618Z</updated>
     
     
       
@@ -84,7 +109,7 @@
     
     
     
-    <category term="Web" scheme="http://guomamba.github.io/categories/Web/"/>
+    <category term="前端" scheme="http://guomamba.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
     
     
     <category term="Golang" scheme="http://guomamba.github.io/tags/Golang/"/>
