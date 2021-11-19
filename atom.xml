@@ -6,7 +6,7 @@
   <link href="http://guomamba.github.io/atom.xml" rel="self"/>
   
   <link href="http://guomamba.github.io/"/>
-  <updated>2021-11-15T08:08:48.653Z</updated>
+  <updated>2021-11-19T13:33:08.982Z</updated>
   <id>http://guomamba.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Leetcode-longestCommonPrefix</title>
+    <link href="http://guomamba.github.io/2021/11/19/leetcode-longestcommonprefix/"/>
+    <id>http://guomamba.github.io/2021/11/19/leetcode-longestcommonprefix/</id>
+    <published>2021-11-19T11:59:23.000Z</published>
+    <updated>2021-11-19T13:33:08.982Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;最长公共前缀&quot;&gt;&lt;a href=&quot;#最长公共前缀&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="编程之道" scheme="http://guomamba.github.io/categories/%E7%BC%96%E7%A8%8B%E4%B9%8B%E9%81%93/"/>
+    
+    
+    <category term="Leetcode" scheme="http://guomamba.github.io/tags/Leetcode/"/>
+    
+  </entry>
   
   <entry>
     <title>Electron</title>
