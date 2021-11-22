@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Go Web, iPott">
+    <meta name="keywords" content="Leetcode-isValid, iPott">
     <meta name="description" content="Show your Love">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>Go Web | iPott</title>
+    <title>Leetcode-isValid | iPott</title>
     <link rel="icon" type="image/x-icon, image/vnd.microsoft.icon" href="/logo.ico">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -323,12 +323,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/guomamba/PicGoCDN/img/go.jfif')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/guomamba/PicGoCDN/img/20211108153035.png')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Go Web</h1>
+                    <h1 class="description center-align post-title">Leetcode-isValid</h1>
                 </div>
             </div>
         </div>
@@ -444,12 +444,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/Golang/">
-                                <span class="chip bg-color">Golang</span>
-                            </a>
-                        
-                            <a href="/tags/Web/">
-                                <span class="chip bg-color">Web</span>
+                            <a href="/tags/Leetcode/">
+                                <span class="chip bg-color">Leetcode</span>
                             </a>
                         
                     </div>
@@ -460,8 +456,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/%E5%89%8D%E7%AB%AF/" class="post-category">
-                                前端
+                            <a href="/categories/%E7%BC%96%E7%A8%8B%E4%B9%8B%E9%81%93/" class="post-category">
+                                编程之道
                             </a>
                         
                     </div>
@@ -473,21 +469,21 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2021-10-27
+                    2021-11-21
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2021-11-09
+                    2021-11-22
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    267
+                    184
                 </div>
                 
 
@@ -517,67 +513,55 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="Go语言Web开发入坑"><a href="#Go语言Web开发入坑" class="headerlink" title="Go语言Web开发入坑"></a>Go语言Web开发入坑</h1><h2 id="Windows下Go语言环境安装"><a href="#Windows下Go语言环境安装" class="headerlink" title="Windows下Go语言环境安装"></a>Windows下Go语言环境安装</h2><p>  *[^_^]: (环境安装很多坑，我搞了一晚上才成功T_T)</p>
-<h2 id="Go语言基础语法"><a href="#Go语言基础语法" class="headerlink" title="Go语言基础语法"></a>Go语言基础语法</h2><h3 id="Hello-World"><a href="#Hello-World" class="headerlink" title="Hello World"></a>Hello World</h3><p>国际惯例-Hello World</p>
-<pre class="line-numbers language-Golang" data-language="Golang"><code class="language-Golang">func main() {
-  fmt.Print("Hello World!")
-}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+                <h1 id="有效的括号"><a href="#有效的括号" class="headerlink" title="有效的括号"></a>有效的括号</h1><p>给定一个只包括 ‘(‘，’)’，’{‘，’}’，’[‘，’]’&nbsp;的字符串 s ，判断字符串是否有效。</p>
+<p>有效字符串需满足：</p>
+<p>左括号必须用相同类型的右括号闭合。<br>左括号必须以正确的顺序闭合。</p>
+<pre class="line-numbers language-demo" data-language="demo"><code class="language-demo">示例 1：
+输入：s = "()"
+输出：true
+示例&nbsp;2：
 
-<h3 id="输入输出"><a href="#输入输出" class="headerlink" title="输入输出"></a>输入输出</h3><pre class="line-numbers language-Golang" data-language="Golang"><code class="language-Golang">
-func main() {
-  var a int
-  fmt.Scan(&amp;a)
-  fmt.Println("a =", a)
-}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+输入：s = "()[]{}"
+输出：true
+示例&nbsp;3：
 
-<h3 id="函数"><a href="#函数" class="headerlink" title="函数"></a>函数</h3><ul>
-<li><p>递归函数</p>
-<pre class="line-numbers language-Golang" data-language="Golang"><code class="language-Golang">
-func fab(i int) int {
-    if i == 0 {
-        return 0
-    } else {
-        if i == 1 {
-            return 1
-        } else {
-            return fab(i-1) + fab(i-2)
-        }
-    }
-}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></li>
-<li><p>if</p>
-<pre class="line-numbers language-Golang" data-language="Golang"><code class="language-Golang">
-func Judge() {
-  a := 10
-  if a != 0 {
-    println("NotZero")
-  }
-}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></li>
-<li><p>延迟调用defer</p>
-<pre class="line-numbers language-Golang" data-language="Golang"><code class="language-Golang">
-func main() {
-    // defer最为延时调用，main函数结束之前调用，可使用多个defer（类似于堆栈结构，先进后出）。
-    // defer执行出错时，先执行所有defer后才报出异常。
-    // 含参函数defer，先进行参数传递，后执行函数
-    defer fmt.Println("延时输出")
-    fmt.Println("输出")
-}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></li>
-<li><p>获取命令行参数</p>
-<pre class="line-numbers language-Golang" data-language="Golang"><code class="language-Golang">
-func main() {
-  list := os.Args //获取用户传递参数，以字符串形式传递
-  for i, data := range list {
-    fmt.Println(i, data)
-  }
-}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+输入：s = "(]"
+输出：false
+示例&nbsp;4：
 
-<p><img src="https://cdn.jsdelivr.net/gh/guomamba/PicGoCDN/img/getCmdINdex.gif" alt="获取命令行参数列表"></p>
-</li>
-<li><p>函数传参</p>
-<pre class="line-numbers language-Golang" data-language="Golang"><code class="language-Golang">
-func main(a, b int)int {//第一个括号内是函数接收的参数，后面为函数的返回
-    return a + b
-}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre></li>
-</ul>
+输入：s = "([)]"
+输出：false
+示例&nbsp;5：
+
+输入：s = "{[]}"
+输出：true<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>来源：力扣（LeetCode）</p>
+<pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token keyword">class</span> <span class="token class-name">Solution</span> <span class="token punctuation">{</span>
+<span class="token keyword">public</span><span class="token operator">:</span>
+    <span class="token keyword">bool</span> <span class="token function">isValid</span><span class="token punctuation">(</span>string s<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        stack <span class="token operator">&lt;</span><span class="token keyword">int</span><span class="token operator">&gt;</span> str<span class="token punctuation">;</span>
+        <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> s<span class="token punctuation">.</span><span class="token function">size</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span>
+        <span class="token punctuation">{</span>
+            <span class="token keyword">if</span><span class="token punctuation">(</span>str<span class="token punctuation">.</span><span class="token function">empty</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+            <span class="token punctuation">{</span>   
+                str<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span>s<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                <span class="token keyword">continue</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>
+            <span class="token keyword">if</span><span class="token punctuation">(</span>s<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">==</span> <span class="token string">')'</span> <span class="token operator">&amp;&amp;</span> str<span class="token punctuation">.</span><span class="token function">top</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">==</span> <span class="token string">'('</span><span class="token punctuation">)</span>
+                str<span class="token punctuation">.</span><span class="token function">pop</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token keyword">else</span> <span class="token keyword">if</span><span class="token punctuation">(</span>s<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">==</span> <span class="token string">']'</span> <span class="token operator">&amp;&amp;</span> str<span class="token punctuation">.</span><span class="token function">top</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">==</span> <span class="token string">'['</span><span class="token punctuation">)</span>
+                str<span class="token punctuation">.</span><span class="token function">pop</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token keyword">else</span> <span class="token keyword">if</span><span class="token punctuation">(</span>s<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">==</span> <span class="token string">'}'</span> <span class="token operator">&amp;&amp;</span> str<span class="token punctuation">.</span><span class="token function">top</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">==</span> <span class="token string">'{'</span><span class="token punctuation">)</span>
+                str<span class="token punctuation">.</span><span class="token function">pop</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token keyword">else</span>
+                str<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span>s<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        <span class="token keyword">return</span> str<span class="token punctuation">.</span><span class="token function">empty</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p><img src="https://cdn.jsdelivr.net/gh/guomamba/PicGoCDN/img/20211122160326.png" alt="Accepted"></p>
 
                 
             </div>
@@ -592,12 +576,8 @@ func main(a, b int)int {//第一个括号内是函数接收的参数，后面为
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/Golang/">
-                                    <span class="chip bg-color">Golang</span>
-                                </a>
-                            
-                                <a href="/tags/Web/">
-                                    <span class="chip bg-color">Web</span>
+                                <a href="/tags/Leetcode/">
+                                    <span class="chip bg-color">Leetcode</span>
                                 </a>
                             
                         </div>
@@ -767,45 +747,47 @@ func main(a, b int)int {//第一个括号内是函数接收的参数，后面为
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2021/11/05/rainmeter/">
+                <a href="/2021/11/21/leetcode-isvalid/">
                     <div class="card-image">
                         
-                        <img src="https://cdn.jsdelivr.net/gh/guomamba/PicGoCDN/img/20211108163710.png" class="responsive-img" alt="rainmeter">
+                        <img src="https://cdn.jsdelivr.net/gh/guomamba/PicGoCDN/img/20211108153035.png" class="responsive-img" alt="Leetcode-isValid">
                         
-                        <span class="card-title">rainmeter</span>
+                        <span class="card-title">Leetcode-isValid</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            WIndows桌面美化工具
+                            程序员的自我修养
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2021-11-05
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-11-21
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/%E5%B7%A5%E5%85%B7%E8%BD%AF%E4%BB%B6/" class="post-category">
-                                    工具软件
+                            <a href="/categories/%E7%BC%96%E7%A8%8B%E4%B9%8B%E9%81%93/" class="post-category">
+                                    编程之道
                                 </a>
                             
                             
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E6%A1%8C%E9%9D%A2%E7%BE%8E%E5%8C%96/">
-                        <span class="chip bg-color">桌面美化</span>
+                    <a href="/tags/Leetcode/">
+                        <span class="chip bg-color">Leetcode</span>
                     </a>
                     
                 </div>
@@ -819,30 +801,30 @@ func main(a, b int)int {//第一个括号内是函数接收的参数，后面为
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2021/10/25/imgurl/">
+                <a href="/2021/11/19/leetcode-longestcommonprefix/">
                     <div class="card-image">
                         
-                        <img src="https://cdn.jsdelivr.net/gh/guomamba/PicGoCDN/img/20211025165338.png" class="responsive-img" alt="自用图床搭建">
+                        <img src="https://cdn.jsdelivr.net/gh/guomamba/PicGoCDN/img/20211108153035.png" class="responsive-img" alt="Leetcode-longestCommonPrefix">
                         
-                        <span class="card-title">自用图床搭建</span>
+                        <span class="card-title">Leetcode-longestCommonPrefix</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            GitHub+PicGo搭建个人图床
+                            程序员的自我修养
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-10-25
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-11-19
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/%E5%B7%A5%E5%85%B7%E8%BD%AF%E4%BB%B6/" class="post-category">
-                                    工具软件
+                            <a href="/categories/%E7%BC%96%E7%A8%8B%E4%B9%8B%E9%81%93/" class="post-category">
+                                    编程之道
                                 </a>
                             
                             
@@ -852,12 +834,8 @@ func main(a, b int)int {//第一个括号内是函数接收的参数，后面为
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E5%9B%BE%E5%BA%8A/">
-                        <span class="chip bg-color">图床</span>
-                    </a>
-                    
-                    <a href="/tags/GitHub/">
-                        <span class="chip bg-color">GitHub</span>
+                    <a href="/tags/Leetcode/">
+                        <span class="chip bg-color">Leetcode</span>
                     </a>
                     
                 </div>
