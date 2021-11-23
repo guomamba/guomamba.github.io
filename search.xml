@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>Leetcode-removeElement</title>
+      <link href="/2021/11/23/leetcode-removeelement/"/>
+      <url>/2021/11/23/leetcode-removeelement/</url>
+      
+        <content type="html"><![CDATA[<h1 id="移除元素"><a href="#移除元素" class="headerlink" title="移除元素"></a>移除元素</h1><h2 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h2><p>给你一个数组 nums&nbsp;和一个值 val，你需要 原地 移除所有数值等于&nbsp;val&nbsp;的元素，并返回移除后数组的新长度。</p><p>不要使用额外的数组空间，你必须仅使用 O(1) 额外空间并 原地 修改输入数组。</p><p>元素的顺序可以改变。你不需要考虑数组中超出新长度后面的元素。</p><p>来源：力扣（LeetCode）</p><h2 id="示例"><a href="#示例" class="headerlink" title="示例"></a>示例</h2><pre class="line-numbers language-demo" data-language="demo"><code class="language-demo">示例 1：输入：nums = [3,2,2,3], val = 3输出：2, nums = [2,2]解释：函数应该返回新的长度 2, 并且 nums 中的前两个元素均为 2。你不需要考虑数组中超出新长度后面的元素。例如，函数返回的新长度为 2 ，而 nums = [2,2,3,3] 或 nums = [2,2,0,0]，也会被视作正确答案。示例 2：输入：nums = [0,1,2,2,3,0,4,2], val = 2输出：5, nums = [0,1,4,0,3]解释：函数应该返回新的长度 5, 并且 nums 中的前五个元素为 0, 1, 3, 0, 4。注意这五个元素可为任意顺序。你不需要考虑数组中超出新长度后面的元素。<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h2 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h2><p>双指针</p><h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token keyword">class</span> <span class="token class-name">Solution</span> <span class="token punctuation">{</span><span class="token keyword">public</span><span class="token operator">:</span>    <span class="token keyword">int</span> <span class="token function">removeElement</span><span class="token punctuation">(</span>vector<span class="token operator">&lt;</span><span class="token keyword">int</span><span class="token operator">&gt;</span><span class="token operator">&amp;</span> nums<span class="token punctuation">,</span> <span class="token keyword">int</span> val<span class="token punctuation">)</span> <span class="token punctuation">{</span>        <span class="token keyword">int</span> length <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>        <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> nums<span class="token punctuation">.</span><span class="token function">size</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span>        <span class="token punctuation">{</span>            <span class="token keyword">if</span><span class="token punctuation">(</span>nums<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">!=</span> val<span class="token punctuation">)</span><span class="token punctuation">{</span>                nums<span class="token punctuation">[</span>length<span class="token punctuation">]</span> <span class="token operator">=</span> nums<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">;</span>                length <span class="token operator">++</span><span class="token punctuation">;</span>            <span class="token punctuation">}</span>        <span class="token punctuation">}</span>        <span class="token keyword">return</span> length<span class="token punctuation">;</span>    <span class="token punctuation">}</span><span class="token punctuation">}</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h2 id="结果"><a href="#结果" class="headerlink" title="结果"></a>结果</h2><p><img src="https://cdn.jsdelivr.net/gh/guomamba/PicGoCDN/img/20211123180906.png" alt="Accepted"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 编程之道 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Leetcode </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Leetcode-mergeTwoLists</title>
       <link href="/2021/11/22/leetcode-mergetwolists/"/>
       <url>/2021/11/22/leetcode-mergetwolists/</url>
