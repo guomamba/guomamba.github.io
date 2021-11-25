@@ -6,7 +6,7 @@
   <link href="http://guomamba.github.io/atom.xml" rel="self"/>
   
   <link href="http://guomamba.github.io/"/>
-  <updated>2021-11-23T10:11:04.357Z</updated>
+  <updated>2021-11-25T13:22:40.515Z</updated>
   <id>http://guomamba.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Leetcode-strStr</title>
+    <link href="http://guomamba.github.io/2021/11/25/leetcode-strstr/"/>
+    <id>http://guomamba.github.io/2021/11/25/leetcode-strstr/</id>
+    <published>2021-11-25T11:03:12.000Z</published>
+    <updated>2021-11-25T13:22:40.515Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;实现-strStr&quot;&gt;&lt;a href=&quot;#实现-strStr&quot; class=&quot;headerlink&quot; title=&quot;实现 strStr()&quot;&gt;&lt;/a&gt;实现 strStr()&lt;/h1&gt;&lt;h2 id=&quot;问题描述&quot;&gt;&lt;a href=&quot;#问题描述&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="编程之道" scheme="http://guomamba.github.io/categories/%E7%BC%96%E7%A8%8B%E4%B9%8B%E9%81%93/"/>
+    
+    
+    <category term="Leetcode" scheme="http://guomamba.github.io/tags/Leetcode/"/>
+    
+  </entry>
   
   <entry>
     <title>Leetcode-removeElement</title>
