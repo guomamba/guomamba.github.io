@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>Leetcode-lengthOfLastWord</title>
+      <link href="/2021/12/19/leetcode-lengthoflastword/"/>
+      <url>/2021/12/19/leetcode-lengthoflastword/</url>
+      
+        <content type="html"><![CDATA[<h1 id="最后一个单词的长度"><a href="#最后一个单词的长度" class="headerlink" title="最后一个单词的长度"></a>最后一个单词的长度</h1><h2 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h2><p>给你一个字符串 s，由若干单词组成，单词前后用一些空格字符隔开。返回字符串中最后一个单词的长度。</p><p>单词 是指仅由字母组成、不包含任何空格字符的最大子字符串。</p><p>来源：力扣（LeetCode）</p><h2 id="示例"><a href="#示例" class="headerlink" title="示例"></a>示例</h2><pre class="line-numbers language-demo" data-language="demo"><code class="language-demo">示例 1：输入：s = "Hello World"输出：5示例 2：输入：s = "   fly me   to   the moon  "输出：4示例 3：输入：s = "luffy is still joyboy"输出：6<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h2 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h2><p>将输入字符串逆序，循环排除字符串前面的空格，然后利用变量Wordcount累计逆序后的第一个单词长度。</p><h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token keyword">int</span> <span class="token function">lengthOfLastWord</span><span class="token punctuation">(</span>string s<span class="token punctuation">)</span> <span class="token punctuation">{</span>    <span class="token keyword">int</span> wordCount <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>    <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> s<span class="token punctuation">.</span><span class="token function">size</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">;</span> i <span class="token operator">&gt;=</span> <span class="token number">0</span><span class="token punctuation">;</span> i<span class="token operator">--</span><span class="token punctuation">)</span>    <span class="token punctuation">{</span>        <span class="token keyword">if</span> <span class="token punctuation">(</span>s<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">==</span> <span class="token string">' '</span> <span class="token operator">&amp;&amp;</span> wordCount <span class="token operator">!=</span> <span class="token number">0</span><span class="token punctuation">)</span>        <span class="token punctuation">{</span>            <span class="token keyword">return</span> wordCount<span class="token punctuation">;</span>        <span class="token punctuation">}</span>        <span class="token keyword">else</span> <span class="token keyword">if</span><span class="token punctuation">(</span>s<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">==</span> <span class="token string">' '</span><span class="token punctuation">)</span>        <span class="token punctuation">{</span>            <span class="token keyword">continue</span><span class="token punctuation">;</span>        <span class="token punctuation">}</span>           <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>s<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">!=</span> <span class="token string">' '</span><span class="token punctuation">)</span>        <span class="token punctuation">{</span>            wordCount<span class="token operator">++</span><span class="token punctuation">;</span>        <span class="token punctuation">}</span>              <span class="token punctuation">}</span>    <span class="token keyword">return</span> wordCount<span class="token punctuation">;</span><span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h2 id="结果"><a href="#结果" class="headerlink" title="结果"></a>结果</h2><p><img src="https://cdn.jsdelivr.net/gh/guomamba/PicGoCDN/img/20211219195427.png" alt="result"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 编程之道 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Leetcode </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Leetcode-maxSubArray</title>
       <link href="/2021/11/29/leetcode-maxsubarray/"/>
       <url>/2021/11/29/leetcode-maxsubarray/</url>
