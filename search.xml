@@ -4,6 +4,58 @@
   
     
     <entry>
+      <title>Leetcode-plusOne</title>
+      <link href="/2021/12/20/leetcode-plusone/"/>
+      <url>/2021/12/20/leetcode-plusone/</url>
+      
+        <content type="html"><![CDATA[<h1 id="最后一个单词的长度"><a href="#最后一个单词的长度" class="headerlink" title="最后一个单词的长度"></a>最后一个单词的长度</h1><h2 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h2><p>给定一个由 整数 组成的 非空 数组所表示的非负整数，在该数的基础上加一。</p><p>最高位数字存放在数组的首位， 数组中每个元素只存储单个数字。</p><p>你可以假设除了整数 0 之外，这个整数不会以零开头。</p><p>来源：力扣（LeetCode）</p><h2 id="示例"><a href="#示例" class="headerlink" title="示例"></a>示例</h2><pre class="line-numbers language-demo" data-language="demo"><code class="language-demo">示例 1：输入：digits = [1,2,3]输出：[1,2,4]解释：输入数组表示数字 123。示例 2：输入：digits = [4,3,2,1]输出：[4,3,2,2]解释：输入数组表示数字 4321。示例 3：输入：digits = [0]输出：[1]示例 4：//自己测试用的示例输入：digits = [9,9]输出：[1,0,0]<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h2 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h2><p>刚开始想法直接将输入转为数字计算在转成数组，结果发现题目要求1 &lt;= digits.length &lt;= 100。最后还是直接用数组来操作，用number来保存是否有进位，最高位有进位的话在向量头部插入1。</p><h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp">vector<span class="token operator">&lt;</span><span class="token keyword">int</span><span class="token operator">&gt;</span> <span class="token function">plusOne</span><span class="token punctuation">(</span>vector<span class="token operator">&lt;</span><span class="token keyword">int</span><span class="token operator">&gt;</span><span class="token operator">&amp;</span> digits<span class="token punctuation">)</span> <span class="token punctuation">{</span>    <span class="token keyword">int</span> number <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>    <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> digits<span class="token punctuation">.</span><span class="token function">size</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">;</span> i <span class="token operator">&gt;=</span> <span class="token number">0</span> <span class="token punctuation">;</span>i<span class="token operator">--</span><span class="token punctuation">)</span>    <span class="token punctuation">{</span>        number <span class="token operator">+=</span> digits<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">;</span>        <span class="token keyword">if</span><span class="token punctuation">(</span>number <span class="token operator">==</span> <span class="token number">10</span><span class="token punctuation">)</span><span class="token punctuation">{</span>            digits<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>            number <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>        <span class="token punctuation">}</span>        <span class="token keyword">else</span><span class="token punctuation">{</span>            digits<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> number<span class="token punctuation">;</span>            number <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>        <span class="token punctuation">}</span>    <span class="token punctuation">}</span>    <span class="token keyword">if</span><span class="token punctuation">(</span>number <span class="token operator">==</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">{</span>        digits<span class="token punctuation">.</span><span class="token function">insert</span><span class="token punctuation">(</span>digits<span class="token punctuation">.</span><span class="token function">begin</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>    <span class="token punctuation">}</span>    <span class="token keyword">return</span> digits<span class="token punctuation">;</span><span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h2 id="结果"><a href="#结果" class="headerlink" title="结果"></a>结果</h2><p><img src="https://cdn.jsdelivr.net/gh/guomamba/PicGoCDN/img/20211220201920.png" alt="result"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 编程之道 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Leetcode </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>vba</title>
+      <link href="/2021/12/19/vba/"/>
+      <url>/2021/12/19/vba/</url>
+      
+        <content type="html"><![CDATA[<h1 id="引言"><a href="#引言" class="headerlink" title="引言"></a>引言</h1><p>说来也巧，年初作为讲师给本科生讲了一些关于Excel的课程，包括Excel基本操作以及图表数据透视表的使用，当然还有Excel函数的使用方法。这学期Excel进阶课，一时竟不知该讲些什么内容，后来在油管上找到了一些关于Excel的非常值得学习的课程，于是就拿过来直接照虎画猫了。</p><h1 id="课程内容"><a href="#课程内容" class="headerlink" title="课程内容"></a>课程内容</h1><p>关于Excel还是有着很多的可以学习的内容，包括Power Query、宏以及VBA编程。</p><h2 id="Power-Query"><a href="#Power-Query" class="headerlink" title="Power Query"></a>Power Query</h2><p>Power Query可以实现对数据的合并分割，类似于数据库操作。使用Power Query主要有三个步骤：数据获取、数据转换和数据加载。</p><p>首先是数据获取。数据获取允许Excel获取不同来源的数据内容，例如文件、数据库以及其他源（包括网站、OData以及ODBC）。其次是数据转换，数据转换可以做的不仅仅是清理数据，也可以添加或删除列、筛选、添加自定义计算等操作。 最后则是数据加载，也就是将处理后的数据加载导出到Excel工作表中。</p><p>利用Power Query可以实现Excel工作表的合并以及Excel文件的合并，对于使用Office工作的用户是一个非常实用的功能。</p><h2 id="宏"><a href="#宏" class="headerlink" title="宏"></a>宏</h2><p>宏是Excel中另一非常强大的工具，使用宏可以大大的提升处理Excel数据的效率，尤其是对于大量重复进行的操作。</p><p>利用宏可以录制用户对于Excel文档的操作过程，有些类似拍视频记录我们的工作，当然在后台是通过自动生成VBA代码来记录用户对于文档的一系列操作，录制完成后可以将录制的一系列操作绑定到插入的元素或开发工具中的控件中。然后通过点击事件的方式取代用户之前的一系列操作。</p><p>当然宏操作也不是万能的，对于一些复杂的操作，虽然能实现录制的操作，但往往使用起来无法得到用户所想到得到的效果，因此需要借助于VBA编程来实现。</p><h2 id="VBA"><a href="#VBA" class="headerlink" title="VBA"></a>VBA</h2><p>VBA是Visual Basic for Application的缩写。VBA是在Office软件与VB的结合，是用于执行自动化任务的编程语言，VBA适合处理复杂、重复性的操作。VBA属于VB中的一种。VBA能够执行自动执行任务，将大量的重复过程用编程语言来描述，用户可以通过控件一键完成操作，从而大大地简化工作。</p><p>类似于宏，VBA也是通过代码来实现用户的操作的自动化，但是需要用户对于Excel中的一些对象和属性有一定的理解。例如WorkSheets对象对应Excel的工作表、WorkBooks对象对应Excel文档。当然还有很多的对象，每个对象有着自身的属性和方法，通过代码调用方法以及属性的修改可以实现对于Excel文档的处理。</p><p>至于编程，和其他的语言类似，其Sub过程和Function对应于其他编程语言中的函数，可以实现互相调用以及自身调用（递归），当然条件判断和循环条件也是同样。</p><p>此外，VBA也支持窗体与控件的编程，虽然只支持原生的控件，但也能实现一定的功能。</p><p><img src="https://cdn.jsdelivr.net/gh/guomamba/PicGoCDN/img/20211219211154.png" alt="Moments"></p><h1 id="写在最后"><a href="#写在最后" class="headerlink" title="写在最后"></a>写在最后</h1><p>直到今天也上了有8节课了，虽然过程没有想象的那么顺利。当然自己学习和教别人对于课程的理解还是有一些不同的，通过一系列的课程，我从中也收获了不少，能够在学习中帮助到别人还是很有成就感的。虽然最近有点忙，但是看到大家的对于课程的反馈还是挺高兴的。以后这样的机会会越来越多，希望能越来越顺利。</p><p><img src="https://cdn.jsdelivr.net/gh/guomamba/PicGoCDN/img/wallhaven-v95egl.jpg" alt="Pretty"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 个人生活 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 教学 </tag>
+            
+            <tag> vba </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Leetcode-lengthOfLastWord</title>
       <link href="/2021/12/19/leetcode-lengthoflastword/"/>
       <url>/2021/12/19/leetcode-lengthoflastword/</url>
