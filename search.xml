@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>Leetcode-climbStairs</title>
+      <link href="/2022/03/10/leetcode-climbstairs/"/>
+      <url>/2022/03/10/leetcode-climbstairs/</url>
+      
+        <content type="html"><![CDATA[<h1 id="爬楼梯"><a href="#爬楼梯" class="headerlink" title="爬楼梯"></a>爬楼梯</h1><h2 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h2><p>假设你正在爬楼梯。需要 n 阶你才能到达楼顶。</p><p>每次你可以爬 1 或 2 个台阶。你有多少种不同的方法可以爬到楼顶呢？</p><p>注意：给定 n 是一个正整数。</p><h2 id="示例"><a href="#示例" class="headerlink" title="示例"></a>示例</h2><pre class="line-numbers language-demo" data-language="demo"><code class="language-demo">示例 1：输入： 2输出： 2解释： 有两种方法可以爬到楼顶。1.  1 阶 + 1 阶2.  2 阶<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><pre class="line-numbers language-demo" data-language="demo"><code class="language-demo">示例 2：输入： 3输出： 3解释： 有三种方法可以爬到楼顶。1.  1 阶 + 1 阶 + 1 阶2.  1 阶 + 2 阶3.  2 阶 + 1 阶<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h2 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h2><p>首先想到是递归的方法来计算，递归逻辑climbStairs(n) = climbStairs(n - 1) + climbStairs(n - 2)，但结果超时，只能用正向的方式，下次迭代的第n-2个台阶的走法等于上次迭代n-1个台阶的走法，下次迭代的第n-1个台阶的走法等于上次迭代的第n个台阶走法，每一步保存当前climbStairs(n - 1)和climbStairs(n - 2)的结果。</p><h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token keyword">int</span> <span class="token function">climbStairs</span><span class="token punctuation">(</span><span class="token keyword">int</span> n<span class="token punctuation">)</span> <span class="token punctuation">{</span>    <span class="token keyword">if</span><span class="token punctuation">(</span>n <span class="token operator">==</span> <span class="token number">1</span><span class="token punctuation">)</span>        <span class="token keyword">return</span> <span class="token number">1</span><span class="token punctuation">;</span>    <span class="token keyword">else</span> <span class="token keyword">if</span><span class="token punctuation">(</span>n <span class="token operator">==</span> <span class="token number">2</span><span class="token punctuation">)</span>        <span class="token keyword">return</span> <span class="token number">2</span><span class="token punctuation">;</span>      <span class="token keyword">else</span>    <span class="token punctuation">{</span>        <span class="token keyword">int</span> fn_2 <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">,</span> fn_1 <span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">,</span> count <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>        <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">3</span><span class="token punctuation">;</span>i <span class="token operator">&lt;=</span> n<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span>        <span class="token punctuation">{</span>            count <span class="token operator">=</span> fn_1 <span class="token operator">+</span> fn_2<span class="token punctuation">;</span><span class="token comment">//累加结果</span>            <span class="token comment">//向下迭代</span>            fn_2 <span class="token operator">=</span> fn_1<span class="token punctuation">;</span><span class="token comment">//下次迭代的第n-2个台阶的走法等于上次迭代n-1个台阶的走法</span>            fn_1 <span class="token operator">=</span> count<span class="token punctuation">;</span><span class="token comment">//下次迭代的第n-1个台阶的走法等于上次迭代的第n个台阶走法</span>        <span class="token punctuation">}</span>        <span class="token keyword">return</span> count<span class="token punctuation">;</span>        <span class="token comment">// 递归思想 climbStairs(n) = climbStairs(n - 1) + climbStairs(n - 2)</span>        <span class="token comment">// return climbStairs(n - 1) + climbStairs(n - 2); </span>    <span class="token punctuation">}</span><span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h2 id="结果"><a href="#结果" class="headerlink" title="结果"></a>结果</h2><p><img src="https://cdn.jsdelivr.net/gh/guomamba/PicGoCDN/img/20220310141301.png" alt="result"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 编程之道 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Leetcode </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Leetcode-mySqrt</title>
       <link href="/2022/01/02/leetcode-mysqrt/"/>
       <url>/2022/01/02/leetcode-mysqrt/</url>
@@ -451,9 +476,9 @@
       
         <tags>
             
-            <tag> 生活 </tag>
-            
             <tag> GitHub </tag>
+            
+            <tag> 生活 </tag>
             
         </tags>
       

@@ -6,7 +6,7 @@
   <link href="http://guomamba.github.io/atom.xml" rel="self"/>
   
   <link href="http://guomamba.github.io/"/>
-  <updated>2022-01-04T12:04:18.547Z</updated>
+  <updated>2022-03-10T06:22:09.487Z</updated>
   <id>http://guomamba.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Leetcode-climbStairs</title>
+    <link href="http://guomamba.github.io/2022/03/10/leetcode-climbstairs/"/>
+    <id>http://guomamba.github.io/2022/03/10/leetcode-climbstairs/</id>
+    <published>2022-03-10T06:12:09.000Z</published>
+    <updated>2022-03-10T06:22:09.487Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;爬楼梯&quot;&gt;&lt;a href=&quot;#爬楼梯&quot; class=&quot;headerlink&quot; title=&quot;爬楼梯&quot;&gt;&lt;/a&gt;爬楼梯&lt;/h1&gt;&lt;h2 id=&quot;问题描述&quot;&gt;&lt;a href=&quot;#问题描述&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="编程之道" scheme="http://guomamba.github.io/categories/%E7%BC%96%E7%A8%8B%E4%B9%8B%E9%81%93/"/>
+    
+    
+    <category term="Leetcode" scheme="http://guomamba.github.io/tags/Leetcode/"/>
+    
+  </entry>
   
   <entry>
     <title>Leetcode-mySqrt</title>
@@ -468,9 +493,9 @@
     <category term="个人生活" scheme="http://guomamba.github.io/categories/%E4%B8%AA%E4%BA%BA%E7%94%9F%E6%B4%BB/"/>
     
     
-    <category term="生活" scheme="http://guomamba.github.io/tags/%E7%94%9F%E6%B4%BB/"/>
-    
     <category term="GitHub" scheme="http://guomamba.github.io/tags/GitHub/"/>
+    
+    <category term="生活" scheme="http://guomamba.github.io/tags/%E7%94%9F%E6%B4%BB/"/>
     
   </entry>
   
@@ -494,27 +519,6 @@
     
     
     <category term="生活" scheme="http://guomamba.github.io/tags/%E7%94%9F%E6%B4%BB/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Hello World</title>
-    <link href="http://guomamba.github.io/2021/10/24/hello-world/"/>
-    <id>http://guomamba.github.io/2021/10/24/hello-world/</id>
-    <published>2021-10-23T18:31:28.019Z</published>
-    <updated>2021-10-23T18:31:28.019Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt;</summary>
-        
-      
-    
-    
-    
     
   </entry>
   

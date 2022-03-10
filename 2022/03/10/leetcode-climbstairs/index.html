@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Leetcode-searchInsert, 𝒊𝑷𝒐𝒕𝒕">
+    <meta name="keywords" content="Leetcode-climbStairs, 𝒊𝑷𝒐𝒕𝒕">
     <meta name="description" content="𝙈𝙪𝙨𝙞𝙘 𝙏𝙧𝙖𝙫𝙚𝙡 𝘾𝙤𝙙𝙚">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>Leetcode-searchInsert | 𝒊𝑷𝒐𝒕𝒕</title>
+    <title>Leetcode-climbStairs | 𝒊𝑷𝒐𝒕𝒕</title>
     <link rel="icon" type="image/x-icon, image/vnd.microsoft.icon" href="/logo.ico">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -328,7 +328,7 @@
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Leetcode-searchInsert</h1>
+                    <h1 class="description center-align post-title">Leetcode-climbStairs</h1>
                 </div>
             </div>
         </div>
@@ -469,21 +469,21 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2021-11-26
+                    2022-03-10
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2021-11-26
+                    2022-03-10
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    225
+                    373
                 </div>
                 
 
@@ -513,53 +513,49 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="搜素插入位置"><a href="#搜素插入位置" class="headerlink" title="搜素插入位置"></a>搜素插入位置</h1><h2 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h2><p>给定一个排序数组和一个目标值，在数组中找到目标值，并返回其索引。如果目标值不存在于数组中，返回它将会被按顺序插入的位置。</p>
-<p>请必须使用时间复杂度为 O(log n) 的算法。</p>
-<h2 id="示例"><a href="#示例" class="headerlink" title="示例"></a>示例</h2><pre class="line-numbers language-demo" data-language="demo"><code class="language-demo">示例 1:
+                <h1 id="爬楼梯"><a href="#爬楼梯" class="headerlink" title="爬楼梯"></a>爬楼梯</h1><h2 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h2><p>假设你正在爬楼梯。需要 n 阶你才能到达楼顶。</p>
+<p>每次你可以爬 1 或 2 个台阶。你有多少种不同的方法可以爬到楼顶呢？</p>
+<p>注意：给定 n 是一个正整数。</p>
+<h2 id="示例"><a href="#示例" class="headerlink" title="示例"></a>示例</h2><pre class="line-numbers language-demo" data-language="demo"><code class="language-demo">示例 1：
 
-输入: nums = [1,3,5,6], target = 5
-输出: 2
-示例&nbsp;2:
+输入： 2
+输出： 2
+解释： 有两种方法可以爬到楼顶。
+1.  1 阶 + 1 阶
+2.  2 阶<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-输入: nums = [1,3,5,6], target = 2
-输出: 1
-示例 3:
+<pre class="line-numbers language-demo" data-language="demo"><code class="language-demo">示例 2：
 
-输入: nums = [1,3,5,6], target = 7
-输出: 4
-示例 4:
+输入： 3
+输出： 3
+解释： 有三种方法可以爬到楼顶。
+1.  1 阶 + 1 阶 + 1 阶
+2.  1 阶 + 2 阶
+3.  2 阶 + 1 阶<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-输入: nums = [1,3,5,6], target = 0
-输出: 0
-示例 5:
-
-输入: nums = [1], target = 0
-输出: 0<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<p>来源：力扣（LeetCode）</p>
-<h2 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h2><p>二分查找</p>
-<h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token keyword">class</span> <span class="token class-name">Solution</span> <span class="token punctuation">{</span>
-<span class="token keyword">public</span><span class="token operator">:</span>
-    <span class="token keyword">int</span> <span class="token function">searchInsert</span><span class="token punctuation">(</span>vector<span class="token operator">&lt;</span><span class="token keyword">int</span><span class="token operator">&gt;</span><span class="token operator">&amp;</span> nums<span class="token punctuation">,</span> <span class="token keyword">int</span> target<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-        <span class="token keyword">int</span> high <span class="token operator">=</span> nums<span class="token punctuation">.</span><span class="token function">size</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">,</span> low <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
-        <span class="token keyword">while</span> <span class="token punctuation">(</span>low <span class="token operator">&lt;=</span> high<span class="token punctuation">)</span>
+<h2 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h2><p>首先想到是递归的方法来计算，递归逻辑climbStairs(n) = climbStairs(n - 1) + climbStairs(n - 2)，但结果超时，只能用正向的方式，下次迭代的第n-2个台阶的走法等于上次迭代n-1个台阶的走法，下次迭代的第n-1个台阶的走法等于上次迭代的第n个台阶走法，每一步保存当前climbStairs(n - 1)和climbStairs(n - 2)的结果。</p>
+<h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token keyword">int</span> <span class="token function">climbStairs</span><span class="token punctuation">(</span><span class="token keyword">int</span> n<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">if</span><span class="token punctuation">(</span>n <span class="token operator">==</span> <span class="token number">1</span><span class="token punctuation">)</span>
+        <span class="token keyword">return</span> <span class="token number">1</span><span class="token punctuation">;</span>
+    <span class="token keyword">else</span> <span class="token keyword">if</span><span class="token punctuation">(</span>n <span class="token operator">==</span> <span class="token number">2</span><span class="token punctuation">)</span>
+        <span class="token keyword">return</span> <span class="token number">2</span><span class="token punctuation">;</span>  
+    <span class="token keyword">else</span>
+    <span class="token punctuation">{</span>
+        <span class="token keyword">int</span> fn_2 <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">,</span> fn_1 <span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">,</span> count <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+        <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">3</span><span class="token punctuation">;</span>i <span class="token operator">&lt;=</span> n<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span>
         <span class="token punctuation">{</span>
-            <span class="token keyword">int</span> mid <span class="token operator">=</span> low <span class="token operator">+</span> <span class="token punctuation">(</span>high <span class="token operator">-</span> low<span class="token punctuation">)</span> <span class="token operator">/</span> <span class="token number">2</span><span class="token punctuation">;</span>         
-            <span class="token keyword">if</span> <span class="token punctuation">(</span>target <span class="token operator">&lt;</span> nums<span class="token punctuation">[</span>mid<span class="token punctuation">]</span><span class="token punctuation">)</span>
-            <span class="token punctuation">{</span>
-                high <span class="token operator">=</span> mid <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">;</span>
-            <span class="token punctuation">}</span>
-            <span class="token keyword">else</span> <span class="token keyword">if</span><span class="token punctuation">(</span>target <span class="token operator">&gt;</span> nums<span class="token punctuation">[</span>mid<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
-                low <span class="token operator">=</span> mid <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">;</span>
-            <span class="token punctuation">}</span>
-            <span class="token keyword">else</span>
-                <span class="token keyword">return</span> mid<span class="token punctuation">;</span>
+            count <span class="token operator">=</span> fn_1 <span class="token operator">+</span> fn_2<span class="token punctuation">;</span><span class="token comment">//累加结果</span>
+            <span class="token comment">//向下迭代</span>
+            fn_2 <span class="token operator">=</span> fn_1<span class="token punctuation">;</span><span class="token comment">//下次迭代的第n-2个台阶的走法等于上次迭代n-1个台阶的走法</span>
+            fn_1 <span class="token operator">=</span> count<span class="token punctuation">;</span><span class="token comment">//下次迭代的第n-1个台阶的走法等于上次迭代的第n个台阶走法</span>
         <span class="token punctuation">}</span>
-        <span class="token keyword">return</span> high <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">;</span>
+        <span class="token keyword">return</span> count<span class="token punctuation">;</span>
+        <span class="token comment">// 递归思想 climbStairs(n) = climbStairs(n - 1) + climbStairs(n - 2)</span>
+        <span class="token comment">// return climbStairs(n - 1) + climbStairs(n - 2); </span>
     <span class="token punctuation">}</span>
-<span class="token punctuation">}</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<h2 id="结果"><a href="#结果" class="headerlink" title="结果"></a>结果</h2><p><img src="https://cdn.jsdelivr.net/gh/guomamba/PicGoCDN/img/20211126174638.png" alt="Accepted"></p>
+<h2 id="结果"><a href="#结果" class="headerlink" title="结果"></a>结果</h2><p><img src="https://cdn.jsdelivr.net/gh/guomamba/PicGoCDN/img/20220310141301.png" alt="result"></p>
 
                 
             </div>
@@ -1008,16 +1004,17 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2021/11/29/leetcode-maxsubarray/">
+                <a href="/2022/03/10/leetcode-climbstairs/">
                     <div class="card-image">
                         
-                        <img src="https://cdn.jsdelivr.net/gh/guomamba/PicGoCDN/img/20211108153035.png" class="responsive-img" alt="Leetcode-maxSubArray">
+                        <img src="https://cdn.jsdelivr.net/gh/guomamba/PicGoCDN/img/20211108153035.png" class="responsive-img" alt="Leetcode-climbStairs">
                         
-                        <span class="card-title">Leetcode-maxSubArray</span>
+                        <span class="card-title">Leetcode-climbStairs</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -1027,9 +1024,9 @@
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2021-11-29
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-03-10
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -1042,6 +1039,7 @@
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
@@ -1060,12 +1058,12 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2021/11/25/leetcode-strstr/">
+                <a href="/2022/01/02/leetcode-mysqrt/">
                     <div class="card-image">
                         
-                        <img src="https://cdn.jsdelivr.net/gh/guomamba/PicGoCDN/img/20211108153035.png" class="responsive-img" alt="Leetcode-strStr">
+                        <img src="https://cdn.jsdelivr.net/gh/guomamba/PicGoCDN/img/20211108153035.png" class="responsive-img" alt="Leetcode-mySqrt">
                         
-                        <span class="card-title">Leetcode-strStr</span>
+                        <span class="card-title">Leetcode-mySqrt</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -1076,7 +1074,7 @@
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-11-25
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-01-02
                             </span>
                         <span class="publish-author">
                             
