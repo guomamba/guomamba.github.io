@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Leetcode-climbStairs, 𝒊𝑷𝒐𝒕𝒕">
+    <meta name="keywords" content="patent, 𝒊𝑷𝒐𝒕𝒕">
     <meta name="description" content="𝙈𝙪𝙨𝙞𝙘 𝙏𝙧𝙖𝙫𝙚𝙡 𝘾𝙤𝙙𝙚">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>Leetcode-climbStairs | 𝒊𝑷𝒐𝒕𝒕</title>
+    <title>patent | 𝒊𝑷𝒐𝒕𝒕</title>
     <link rel="icon" type="image/x-icon, image/vnd.microsoft.icon" href="/logo.ico">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -323,12 +323,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/guomamba/PicGoCDN/img/20211108153035.png')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/guomamba/PicGoCDN/img/u=3243839478,1958563607&fm=74&app=80&f=JPEG&size=f121,121')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Leetcode-climbStairs</h1>
+                    <h1 class="description center-align post-title">patent</h1>
                 </div>
             </div>
         </div>
@@ -444,8 +444,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/Leetcode/">
-                                <span class="chip bg-color">Leetcode</span>
+                            <a href="/tags/%E4%B8%93%E5%88%A9/">
+                                <span class="chip bg-color">专利</span>
                             </a>
                         
                     </div>
@@ -456,8 +456,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/%E7%BC%96%E7%A8%8B%E4%B9%8B%E9%81%93/" class="post-category">
-                                编程之道
+                            <a href="/categories/%E4%B8%AA%E4%BA%BA%E7%94%9F%E6%B4%BB/" class="post-category">
+                                个人生活
                             </a>
                         
                     </div>
@@ -469,21 +469,21 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2022-03-10
+                    2022-04-07
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2022-03-10
+                    2022-04-14
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    373
+                    39
                 </div>
                 
 
@@ -513,49 +513,7 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="爬楼梯"><a href="#爬楼梯" class="headerlink" title="爬楼梯"></a>爬楼梯</h1><h2 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h2><p>假设你正在爬楼梯。需要 n 阶你才能到达楼顶。</p>
-<p>每次你可以爬 1 或 2 个台阶。你有多少种不同的方法可以爬到楼顶呢？</p>
-<p>注意：给定 n 是一个正整数。</p>
-<h2 id="示例"><a href="#示例" class="headerlink" title="示例"></a>示例</h2><pre class="line-numbers language-demo" data-language="demo"><code class="language-demo">示例 1：
-
-输入： 2
-输出： 2
-解释： 有两种方法可以爬到楼顶。
-1.  1 阶 + 1 阶
-2.  2 阶<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<pre class="line-numbers language-demo" data-language="demo"><code class="language-demo">示例 2：
-
-输入： 3
-输出： 3
-解释： 有三种方法可以爬到楼顶。
-1.  1 阶 + 1 阶 + 1 阶
-2.  1 阶 + 2 阶
-3.  2 阶 + 1 阶<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<h2 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h2><p>首先想到是递归的方法来计算，递归逻辑climbStairs(n) = climbStairs(n - 1) + climbStairs(n - 2)，但结果超时，只能用正向的方式，下次迭代的第n-2个台阶的走法等于上次迭代n-1个台阶的走法，下次迭代的第n-1个台阶的走法等于上次迭代的第n个台阶走法，每一步保存当前climbStairs(n - 1)和climbStairs(n - 2)的结果。</p>
-<h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token keyword">int</span> <span class="token function">climbStairs</span><span class="token punctuation">(</span><span class="token keyword">int</span> n<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    <span class="token keyword">if</span><span class="token punctuation">(</span>n <span class="token operator">==</span> <span class="token number">1</span><span class="token punctuation">)</span>
-        <span class="token keyword">return</span> <span class="token number">1</span><span class="token punctuation">;</span>
-    <span class="token keyword">else</span> <span class="token keyword">if</span><span class="token punctuation">(</span>n <span class="token operator">==</span> <span class="token number">2</span><span class="token punctuation">)</span>
-        <span class="token keyword">return</span> <span class="token number">2</span><span class="token punctuation">;</span>  
-    <span class="token keyword">else</span>
-    <span class="token punctuation">{</span>
-        <span class="token keyword">int</span> fn_2 <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">,</span> fn_1 <span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">,</span> count <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
-        <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">3</span><span class="token punctuation">;</span>i <span class="token operator">&lt;=</span> n<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span>
-        <span class="token punctuation">{</span>
-            count <span class="token operator">=</span> fn_1 <span class="token operator">+</span> fn_2<span class="token punctuation">;</span><span class="token comment">//累加结果</span>
-            <span class="token comment">//向下迭代</span>
-            fn_2 <span class="token operator">=</span> fn_1<span class="token punctuation">;</span><span class="token comment">//下次迭代的第n-2个台阶的走法等于上次迭代n-1个台阶的走法</span>
-            fn_1 <span class="token operator">=</span> count<span class="token punctuation">;</span><span class="token comment">//下次迭代的第n-1个台阶的走法等于上次迭代的第n个台阶走法</span>
-        <span class="token punctuation">}</span>
-        <span class="token keyword">return</span> count<span class="token punctuation">;</span>
-        <span class="token comment">// 递归思想 climbStairs(n) = climbStairs(n - 1) + climbStairs(n - 2)</span>
-        <span class="token comment">// return climbStairs(n - 1) + climbStairs(n - 2); </span>
-    <span class="token punctuation">}</span>
-<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<h2 id="结果"><a href="#结果" class="headerlink" title="结果"></a>结果</h2><p><img src="https://cdn.jsdelivr.net/gh/guomamba/PicGoCDN/img/20220310141301.png" alt="result"></p>
+                <h2 id="专利"><a href="#专利" class="headerlink" title="专利"></a>专利</h2><h3 id="说明书摘要"><a href="#说明书摘要" class="headerlink" title="说明书摘要"></a>说明书摘要</h3><h3 id="摘要附图"><a href="#摘要附图" class="headerlink" title="摘要附图"></a>摘要附图</h3><h3 id="权利要求书"><a href="#权利要求书" class="headerlink" title="权利要求书"></a>权利要求书</h3><h3 id="说明书"><a href="#说明书" class="headerlink" title="说明书"></a>说明书</h3><p>水母机器人<br>构成：驱动系统、运动结构和传动机构。</p>
 
                 
             </div>
@@ -570,8 +528,8 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/Leetcode/">
-                                    <span class="chip bg-color">Leetcode</span>
+                                <a href="/tags/%E4%B8%93%E5%88%A9/">
+                                    <span class="chip bg-color">专利</span>
                                 </a>
                             
                         </div>
@@ -1004,9 +962,10 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
                 <a href="/2022/04/07/patent/">
                     <div class="card-image">
@@ -1023,9 +982,9 @@
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2022-04-07
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-04-07
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -1038,6 +997,7 @@
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
@@ -1056,12 +1016,12 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/01/02/leetcode-mysqrt/">
+                <a href="/2022/03/10/leetcode-climbstairs/">
                     <div class="card-image">
                         
-                        <img src="https://cdn.jsdelivr.net/gh/guomamba/PicGoCDN/img/20211108153035.png" class="responsive-img" alt="Leetcode-mySqrt">
+                        <img src="https://cdn.jsdelivr.net/gh/guomamba/PicGoCDN/img/20211108153035.png" class="responsive-img" alt="Leetcode-climbStairs">
                         
-                        <span class="card-title">Leetcode-mySqrt</span>
+                        <span class="card-title">Leetcode-climbStairs</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -1072,7 +1032,7 @@
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-01-02
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-03-10
                             </span>
                         <span class="publish-author">
                             
