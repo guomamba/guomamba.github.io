@@ -1,4 +1,110 @@
-body{
-  background-color: lightblue;
+@font-face {
+  font-family: 'freehandregular';
+  src: url("source/webfontkit-20221020-043043/freehand-regular-webfont.woff2") format('woff2'),
+       url("source/webfontkit-20221020-043043/freehand-regular-webfont.woff") format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+html, body, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, nav, button, section, header, footer, title, wix-iframe {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  vertical-align: baseline;
+  background: transparent;
+}
+html{
+  scroll-behavior: smooth;
+}
+.header{
+  height: 70px;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  text-align: center;
+  line-height: 70px;
+  font-size: larger;
+  position: fixed;
+  z-index: 9999;
+}
+.line{
+  height: 4px;
+  width: 100%;
+  background-color: black;
+}
+.main{
+  height: 1800px;
+  width: 100%;
   background-image: url(source/background_pink.jpg);
+}
+.content{
+  top: 74px;
+  height: 800px;
+  width: 960px;
+  margin: auto;
+  position: relative;
+}
+.signature{
+  position: absolute;
+  left:0;
+  right:0;
+  margin: auto;
+  top: 100px;
+  text-align: center;
+  font-family: "freehandregular",Arial, Helvetica, sans-serif;
+  font-size: 100px;
+}
+.time{
+  position: absolute;
+  left:0;
+  right:0;
+  margin: auto;
+  top: 450px;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+.age{
+  position: absolute;
+  left:0;
+  right:0;
+  margin: auto;
+  top: 220px;
+  text-align: center;
+  font-size: 100px;
+  font-weight: bold;
+  color: rgb(243, 190, 15);
+}
+.contentline{
+  position: absolute;
+  left: -70%;
+  right: -70%;
+  margin: auto;
+  top: 700px;
+  height: 4px;
+  width: 240%;
+  background-color: black;
+}
+.card{
+  position: absolute;
+  border: 5px solid rgba(0, 0, 0, 1);
+  left:0;
+  right:0;
+  margin: auto;
+  height: 1050px;
+  top: 600px;
+  background-color: white;
+}
+.footer{
+  height: 100px;
+  width: 100%;
+  background-color: rgb(252,217,99);
+}
+.footer p{
+  line-height: 100px;
+  text-align: center;
+  font-family:poppins-extralight,poppins,sans-serif;
+}
+.link{
+  color: black;
+  text-decoration:none;
 }
