@@ -108,3 +108,11 @@ html{
   color: black;
   text-decoration:none;
 }
+.myPicture{
+  position: absolute;
+}
+.audio{
+  position: absolute;
+  top: 0;
+  right: 0;
+}
