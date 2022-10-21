@@ -1,3 +1,4 @@
+// document.addEventListener('')
 
 var myPix = new Array("source/1.png","source/2.png","source/3.png","source/4.png","source/5.png","source/6.png","source/7.png","source/8.png");
 
