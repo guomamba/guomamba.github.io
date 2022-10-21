@@ -1,0 +1,94 @@
+html, body, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, nav, button, section, header, footer, title, wix-iframe {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    vertical-align: baseline;
+    background: transparent;
+  }
+.background{
+    width: 100%;
+    /* height: 923px; */
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+}
+.background-flip{
+    width: 50%;
+    height: 50%;
+    position: relative;
+}
+.background-content1{
+    background-color: rgb(12, 12, 12);
+    position: absolute;
+    top: 10%;
+    bottom: 2%;
+    left: 10%;
+    right: 4%;
+    height: 88%;
+    width: 86%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.background-content2{
+    background-color: rgb(12, 12, 12);
+    position: absolute;
+    top: 10%;
+    bottom: 2%;
+    left: 4%;
+    right: 10%;
+    height: 88%;
+    width: 86%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.background-content3{
+    background-color: rgb(12, 12, 12);
+    position: absolute;
+    top: 2%;
+    bottom: 10%;
+    left: 10%;
+    right: 4%;
+    height: 88%;
+    width: 86%;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.background-content4{
+    background-color: rgb(12, 12, 12);
+    position: absolute;
+    top: 2%;
+    bottom: 10%;
+    left: 4%;
+    right: 10%;
+    height: 88%;
+    width: 86%;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.hour{
+    position: absolute;
+    text-align: center;
+    color: rgb(163, 99, 196);
+    left: 15%;
+    height: 170%;
+    width: 75%;
+    z-index: 9999;
+}
+.minute{
+    position: absolute;
+    text-align: center;
+    color: rgb(163, 99, 196);
+    left: 9%;
+    height: 170%;
+    width: 75%;
+    z-index: 9999;
+}
+.second{
+    position: absolute;
+    text-align: center;
+    color: rgb(163, 99, 196);
+    font-size: xx-large;
+    left: 85%;
+    top: 80%;
+}
