@@ -6,7 +6,7 @@
   <link href="http://guomamba.github.io/atom.xml" rel="self"/>
   
   <link href="http://guomamba.github.io/"/>
-  <updated>2022-04-14T06:31:44.236Z</updated>
+  <updated>2022-10-24T13:48:58.926Z</updated>
   <id>http://guomamba.github.io/</id>
   
   <author>
@@ -17,11 +17,36 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>DomainNameUpdate</title>
+    <link href="http://guomamba.github.io/2022/10/24/domainnameupdate/"/>
+    <id>http://guomamba.github.io/2022/10/24/domainnameupdate/</id>
+    <published>2022-10-24T13:14:55.000Z</published>
+    <updated>2022-10-24T13:48:58.926Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;域名更换&quot;&gt;&lt;a href=&quot;#域名更换&quot; class=&quot;headerlink&quot; title=&quot;域名更换&quot;&gt;&lt;/a&gt;域名更换&lt;/h2&gt;&lt;p&gt;之前注册的&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="个人生活" scheme="http://guomamba.github.io/categories/%E4%B8%AA%E4%BA%BA%E7%94%9F%E6%B4%BB/"/>
+    
+    
+    <category term="生活" scheme="http://guomamba.github.io/tags/%E7%94%9F%E6%B4%BB/"/>
+    
+  </entry>
+  
+  <entry>
     <title>patent</title>
     <link href="http://guomamba.github.io/2022/04/07/patent/"/>
     <id>http://guomamba.github.io/2022/04/07/patent/</id>
     <published>2022-04-07T07:24:48.000Z</published>
-    <updated>2022-04-14T06:31:44.236Z</updated>
+    <updated>2022-10-24T13:18:46.645Z</updated>
     
     
       
@@ -492,33 +517,6 @@
     
     
     <category term="图床" scheme="http://guomamba.github.io/tags/%E5%9B%BE%E5%BA%8A/"/>
-    
-    <category term="GitHub" scheme="http://guomamba.github.io/tags/GitHub/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Personal Homepage</title>
-    <link href="http://guomamba.github.io/2021/10/24/personal-homepage/"/>
-    <id>http://guomamba.github.io/2021/10/24/personal-homepage/</id>
-    <published>2021-10-24T15:54:54.000Z</published>
-    <updated>2021-11-08T08:34:25.104Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;个人网站新域名新样式&quot;&gt;&lt;a href=&quot;#个人网站新域名新样式&quot; class=&quot;headerlink&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="个人生活" scheme="http://guomamba.github.io/categories/%E4%B8%AA%E4%BA%BA%E7%94%9F%E6%B4%BB/"/>
-    
-    
-    <category term="生活" scheme="http://guomamba.github.io/tags/%E7%94%9F%E6%B4%BB/"/>
     
     <category term="GitHub" scheme="http://guomamba.github.io/tags/GitHub/"/>
     

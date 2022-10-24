@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded',function(){
     var item = document.getElementById("background")
-    item.style.height = window.screen.availHeight + "px"
+    item.style.height = window.screen.availHeight - 100 + "px"
 })
 
 var showtime = function (type) {
