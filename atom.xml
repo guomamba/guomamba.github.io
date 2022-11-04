@@ -6,7 +6,7 @@
   <link href="http://guomamba.github.io/atom.xml" rel="self"/>
   
   <link href="http://guomamba.github.io/"/>
-  <updated>2022-10-25T06:52:10.519Z</updated>
+  <updated>2022-11-04T13:50:45.694Z</updated>
   <id>http://guomamba.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>miniprogran</title>
+    <link href="http://guomamba.github.io/2022/11/04/miniprogran/"/>
+    <id>http://guomamba.github.io/2022/11/04/miniprogran/</id>
+    <published>2022-11-04T13:39:36.000Z</published>
+    <updated>2022-11-04T13:50:45.694Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;项目地址&quot;&gt;&lt;a href=&quot;#项目地址&quot; class=&quot;headerlink&quot; title=&quot;项目地址&quot;&gt;&lt;/a&gt;项目地址&lt;/h1&gt;&lt;p&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="前端" scheme="http://guomamba.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+    <category term="微信小程序" scheme="http://guomamba.github.io/tags/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/"/>
+    
+  </entry>
   
   <entry>
     <title>DomainNameUpdate</title>
@@ -492,33 +517,6 @@
     <category term="Golang" scheme="http://guomamba.github.io/tags/Golang/"/>
     
     <category term="Web" scheme="http://guomamba.github.io/tags/Web/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>自用图床搭建</title>
-    <link href="http://guomamba.github.io/2021/10/25/imgurl/"/>
-    <id>http://guomamba.github.io/2021/10/25/imgurl/</id>
-    <published>2021-10-25T08:48:59.000Z</published>
-    <updated>2021-10-26T18:30:33.014Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;GitHub-PicGo搭建个人图床&quot;&gt;&lt;a href=&quot;#GitHub-PicGo搭建个人图床&quot; class=&quot;headerlink&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="工具软件" scheme="http://guomamba.github.io/categories/%E5%B7%A5%E5%85%B7%E8%BD%AF%E4%BB%B6/"/>
-    
-    
-    <category term="图床" scheme="http://guomamba.github.io/tags/%E5%9B%BE%E5%BA%8A/"/>
-    
-    <category term="GitHub" scheme="http://guomamba.github.io/tags/GitHub/"/>
     
   </entry>
   
