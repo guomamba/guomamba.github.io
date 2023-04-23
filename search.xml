@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>Qt入门</title>
+      <link href="/2023/04/23/qt/"/>
+      <url>/2023/04/23/qt/</url>
+      
+        <content type="html"><![CDATA[<h1 id="Qt"><a href="#Qt" class="headerlink" title="Qt"></a>Qt</h1><h2 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h2><p>Qt是一个跨平台的应用程序框架，用于创建图形用户界面（GUI）和开发多平台应用程序。它为构建桌面、移动、嵌入式和IoT（物联网）应用程序提供了一套全面的工具和库。Qt是用C++编写的，包括广泛的模块，包括UI组件、网络、多媒体、文件I/O、数据库连接等等。</p><p>Qt以其易用性、灵活性和可扩展性而闻名。它允许开发人员一次编写并在多个平台上部署，包括Windows、macOS、Linux、Android和iOS，而不必重写整个代码库。Qt遵循 “一次编写，随处运行”（WORA）的理念，使其成为跨平台开发的热门选择。</p><p>Qt还包括一个强大而直观的UI设计工具Qt Creator，它为设计用户界面提供了一个可视化界面，并包括代码编辑、调试和分析工具等功能。Qt Creator使开发者能够轻松地创建具有视觉吸引力和互动性的应用程序。</p><p>Qt被广泛应用于各个行业，包括汽车、航空航天、医疗保健、消费电子、游戏、工业自动化等等。它被个人开发者和大型组织用来创建广泛的应用程序，从简单的桌面应用程序到各种平台的复杂和功能丰富的应用程序。</p><h2 id="Download"><a href="#Download" class="headerlink" title="Download"></a>Download</h2><h3 id="官网下载"><a href="#官网下载" class="headerlink" title="官网下载"></a>官网下载</h3><p><a href="https://download.qt.io/">官网下载链接</a></p><p>具体下载目录：/archive/qt/X.X/X.X.X/single/。其中X.X为版本号，X.X.X为对应版本的补丁号。下载对应系统的安装包即可（下载速度稍慢）</p><h3 id="国内镜像"><a href="#国内镜像" class="headerlink" title="国内镜像"></a>国内镜像</h3><p><a href="http://mirrors.ustc.edu.cn/qtproject/">中科大镜像链接</a></p><p>具体下载目录同上（/archive/qt/X.X/X.X.X/single/，下载速度较快）</p><h2 id="安装（Windows平台）"><a href="#安装（Windows平台）" class="headerlink" title="安装（Windows平台）"></a>安装（Windows平台）</h2><p>双击下载得到的 qt-opensource-windows-x86-X.X.X.exe 即可开始安装。</p><p><img src="https://cdn.jsdelivr.net/gh/guomamba/PicGoCDN/img/20230423160827.png" alt="安装"></p><p>Qt 的安装组件分为两部分：一部分是“Qt X.X.X”分类下的，该分类包含的是真正的 Qt 开发库组件；另一部分是“Tools”分类下的，该分类包含的是集成开发环境和编译工具。选择需要的组件，根据向导一步一步操作即可完成安装。</p><h2 id="Qt-Creator界面"><a href="#Qt-Creator界面" class="headerlink" title="Qt Creator界面"></a>Qt Creator界面</h2><p><img src="https://cdn.jsdelivr.net/gh/guomamba/PicGoCDN/img/20230423200609.png" alt="界面"></p><h2 id="程序编写"><a href="#程序编写" class="headerlink" title="程序编写"></a>程序编写</h2><h3 id="新建项目"><a href="#新建项目" class="headerlink" title="新建项目"></a>新建项目</h3><p><img src="https://cdn.jsdelivr.net/gh/guomamba/PicGoCDN/img/20230423202325.png" alt="新建项目"></p><p>Qt Creator 可以创建多种项目，在最左侧的列表框中单击“Application”，中间的列表框中列出了可以创建的应用程序的模板，各类应用程序如下：<br>Qt Widgets Application，支持桌面平台的有图形用户界面（Graphic User Interface，GUI） 界面的应用程序。GUI 的设计完全基于 C++ 语言，采用 Qt 提供的一套 C++ 类库。<br>Qt Console Application，控制台应用程序，无 GUI 界面，一般用于学习 C/C++ 语言，只需要简单的输入输出操作时可创建此类项目。<br>Qt Quick Application，创建可部署的 Qt Quick 2 应用程序。Qt Quick 是 Qt 支持的一套 GUI 开发架构，其界面设计采用 QML 语言，程序架构采用 C++ 语言。利用 Qt Quick 可以设计非常炫的用户界面，一般用于移动设备或嵌入式设备上无边框的应用程序的设计。</p><h3 id="项目的文件组成和管理"><a href="#项目的文件组成和管理" class="headerlink" title="项目的文件组成和管理"></a>项目的文件组成和管理</h3><p><img src="https://cdn.jsdelivr.net/gh/guomamba/PicGoCDN/img/20230423202921.png" alt="项目的文件组成和管理"></p><p>窗口左侧有上下两个子窗口，上方的目录树显示了项目内文件的组织结构，显示当 前项目为 Demo。项目的名称构成目录树的一个根节点，Qt Creator 可以打开多个项目，但是只有一个活动项目，活动项目的项目名称节点用粗体字体表示。</p><p>在项目名称节点下面，分组管理着项目内的各种源文件，几个文件及分组分别为以下几项：</p><ul><li>Demo.pro 是项目管理文件，包括一些对项目的设置项。</li><li>Headers 分组，该节点下是项目内的所有头文件（.h），上图中所示项目有一个头文件 mainwindow.h，是主窗口类的头文件。</li><li>Sources 分组：该节点下是项目内的所有 C++源文件（.cpp），上图中所示项目有两个 C++ 源文件，mainwindow.cpp 是主窗口类的实现文件，与 mainwindow.h 文件对应。main.cpp 是主函数文件，也是应用程序的入口。</li><li>Forms 分组：该节点下是项目内的所有界面文件（.ui）。上图中所示项目有一个界面文件mainwindow.ui，是主窗口的界面文件。界面文件是文本文件，使用 XML 语言描述界面的组成。</li></ul><p>左侧上下两个子窗口的显示内容可以通过其上方的一个下拉列表框进行选择，可以选择的显示内容包括项目、打开文档、书签、文件系统、类视图、大纲等。在图中，上方的子窗口显示了项目的文件目录树，下方显示打开的文件列表。可以在下方选择显示类视图，这样下方则显示项目内所有的类的结构，便于程序浏览和快速切换到需要的代码位置。</p><p>打开Forms分组下的mainwindow.ui文件，出现如下图所示的窗体设计界面：</p><p><img src="https://cdn.jsdelivr.net/gh/guomamba/PicGoCDN/img/20230423203447.png" alt="窗体设计界面"></p><p>这个界面比较熟悉，类似WinForms和VBA中的窗体设计界面。</p><h3 id="项目的编译、调试与运行"><a href="#项目的编译、调试与运行" class="headerlink" title="项目的编译、调试与运行"></a>项目的编译、调试与运行</h3><p><img src="https://cdn.jsdelivr.net/gh/guomamba/PicGoCDN/img/20230423204051.png" alt="项目的编译、调试与运行"></p><p>界面左侧一栏的“Build &amp; Run”下面显示了本项目中可用的编译器工具，要使用哪一个编译器用于项目编译，单击其名称即可，选择的编译器名称会用粗体字表示。这里选择使用 MinGW 32bit 编译器。</p><p>每个编译器又有 Build 和 Run 两个设置界面。在 Build 设置界面上，有一个“Shadow build” 复选框。如果勾选此项，编译后将在项目的同级目录下建立一个编译后的文件目录，目录名称包含编译器信息，这种方式一般用于使用不同编译器创建不同版本的可执行文件。如果不勾选此项，编译后将在项目的目录下建立“Debug”和“Release”子目录用于存放编译后的文件。</p><p>在设计完 mainwindow.ui 文件，并设置好编译工具之后，就可以对项目进行编译、调试或运行。</p><h3 id="Hello-World"><a href="#Hello-World" class="headerlink" title="Hello World"></a>Hello World</h3><p><img src="https://cdn.jsdelivr.net/gh/guomamba/PicGoCDN/img/20230423204711.png" alt="Hello World"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Qt </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Qt </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>miniprogran</title>
       <link href="/2022/11/04/miniprogran/"/>
       <url>/2022/11/04/miniprogran/</url>

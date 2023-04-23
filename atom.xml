@@ -6,7 +6,7 @@
   <link href="http://guomamba.github.io/atom.xml" rel="self"/>
   
   <link href="http://guomamba.github.io/"/>
-  <updated>2022-11-04T13:50:45.694Z</updated>
+  <updated>2023-04-23T12:55:06.752Z</updated>
   <id>http://guomamba.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Qt入门</title>
+    <link href="http://guomamba.github.io/2023/04/23/qt/"/>
+    <id>http://guomamba.github.io/2023/04/23/qt/</id>
+    <published>2023-04-23T07:12:51.000Z</published>
+    <updated>2023-04-23T12:55:06.752Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;Qt&quot;&gt;&lt;a href=&quot;#Qt&quot; class=&quot;headerlink&quot; title=&quot;Qt&quot;&gt;&lt;/a&gt;Qt&lt;/h1&gt;&lt;h2 id=&quot;介绍&quot;&gt;&lt;a href=&quot;#介绍&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="Qt" scheme="http://guomamba.github.io/categories/Qt/"/>
+    
+    
+    <category term="Qt" scheme="http://guomamba.github.io/tags/Qt/"/>
+    
+  </entry>
   
   <entry>
     <title>miniprogran</title>
@@ -490,33 +515,6 @@
     
     
     <category term="桌面美化" scheme="http://guomamba.github.io/tags/%E6%A1%8C%E9%9D%A2%E7%BE%8E%E5%8C%96/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Go Web</title>
-    <link href="http://guomamba.github.io/2021/10/27/go-web/"/>
-    <id>http://guomamba.github.io/2021/10/27/go-web/</id>
-    <published>2021-10-26T18:20:47.000Z</published>
-    <updated>2021-11-09T07:22:39.618Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;Go语言Web开发入坑&quot;&gt;&lt;a href=&quot;#Go语言Web开发入坑&quot; class=&quot;headerlink&quot; title=&quot;Go语言Web开发入坑&quot;&gt;&lt;/a&gt;Go语言Web开发入坑&lt;/h1&gt;&lt;h2 id=&quot;Windows下Go语言环境安装&quot;&gt;&lt;a</summary>
-        
-      
-    
-    
-    
-    <category term="前端" scheme="http://guomamba.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
-    
-    
-    <category term="Golang" scheme="http://guomamba.github.io/tags/Golang/"/>
-    
-    <category term="Web" scheme="http://guomamba.github.io/tags/Web/"/>
     
   </entry>
   
