@@ -6,7 +6,7 @@
   <link href="http://guomamba.github.io/atom.xml" rel="self"/>
   
   <link href="http://guomamba.github.io/"/>
-  <updated>2023-04-23T12:55:06.752Z</updated>
+  <updated>2023-10-25T14:42:01.719Z</updated>
   <id>http://guomamba.github.io/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>App-Script</title>
+    <link href="http://guomamba.github.io/2023/04/26/app-script/"/>
+    <id>http://guomamba.github.io/2023/04/26/app-script/</id>
+    <published>2023-04-26T09:09:39.000Z</published>
+    <updated>2023-10-25T14:42:01.719Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;Google-Apps-Script&quot;&gt;&lt;a href=&quot;#Google-Apps-Script&quot; class=&quot;headerlink&quot; title=&quot;Google Apps Script&quot;&gt;&lt;/a&gt;Google Apps Script&lt;/h1&gt;&lt;h2</summary>
+        
+      
+    
+    
+    
+    <category term="工具软件" scheme="http://guomamba.github.io/categories/%E5%B7%A5%E5%85%B7%E8%BD%AF%E4%BB%B6/"/>
+    
+    
+    <category term="vba" scheme="http://guomamba.github.io/tags/vba/"/>
+    
+    <category term="google" scheme="http://guomamba.github.io/tags/google/"/>
+    
+  </entry>
   
   <entry>
     <title>Qt入门</title>
@@ -237,9 +264,9 @@
     <category term="个人生活" scheme="http://guomamba.github.io/categories/%E4%B8%AA%E4%BA%BA%E7%94%9F%E6%B4%BB/"/>
     
     
-    <category term="教学" scheme="http://guomamba.github.io/tags/%E6%95%99%E5%AD%A6/"/>
-    
     <category term="vba" scheme="http://guomamba.github.io/tags/vba/"/>
+    
+    <category term="教学" scheme="http://guomamba.github.io/tags/%E6%95%99%E5%AD%A6/"/>
     
   </entry>
   
@@ -490,31 +517,6 @@
     
     
     <category term="Leetcode" scheme="http://guomamba.github.io/tags/Leetcode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>rainmeter</title>
-    <link href="http://guomamba.github.io/2021/11/05/rainmeter/"/>
-    <id>http://guomamba.github.io/2021/11/05/rainmeter/</id>
-    <published>2021-11-05T11:34:51.000Z</published>
-    <updated>2021-11-22T13:53:04.760Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;Windows桌面美化工具-Rainmeter&quot;&gt;&lt;a href=&quot;#Windows桌面美化工具-Rainmeter&quot; class=&quot;headerlink&quot; title=&quot;Windows桌面美化工具: Rainmeter&quot;&gt;&lt;/a&gt;Windows桌面美化工具:</summary>
-        
-      
-    
-    
-    
-    <category term="工具软件" scheme="http://guomamba.github.io/categories/%E5%B7%A5%E5%85%B7%E8%BD%AF%E4%BB%B6/"/>
-    
-    
-    <category term="桌面美化" scheme="http://guomamba.github.io/tags/%E6%A1%8C%E9%9D%A2%E7%BE%8E%E5%8C%96/"/>
     
   </entry>
   

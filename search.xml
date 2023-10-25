@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>App-Script</title>
+      <link href="/2023/04/26/app-script/"/>
+      <url>/2023/04/26/app-script/</url>
+      
+        <content type="html"><![CDATA[<h1 id="Google-Apps-Script"><a href="#Google-Apps-Script" class="headerlink" title="Google Apps Script"></a>Google Apps Script</h1><h2 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h2><p>Apps Script是一个快速的应用程序开发平台，可以快速轻松地创建与 Google Workspace 集成的业务应用程序。Apps Script是一个基于云的JavaScript平台，可以整合谷歌产品并实现自动化。采用JavaScript编写代码，可以访问最喜欢的Google Workspace应用程序的内置库，如Gmail、日历、Drive等。不需要安装IDE，在浏览器中即可完成代码的编辑，编辑好的脚本在谷歌的服务器上运行。</p><p><img src="https://cdn.jsdelivr.net/gh/guomamba/PicGoCDN/img/20230426192301.png" alt="Apps Script"></p><!-- <video id="video" controls="" preload="none" poster="https://cdn.jsdelivr.net/gh/guomamba/PicGoCDN/img/20230426171609.png">      <source id="mp4" src="https://cdn.jsdelivr.net/gh/guomamba/PicGoCDN/img/What is Google Apps Script.mp4" type="video/mp4"></videos> --><h2 id="Demo——创建-Google文档并通过电子邮件向您发送文档链接"><a href="#Demo——创建-Google文档并通过电子邮件向您发送文档链接" class="headerlink" title="Demo——创建 Google文档并通过电子邮件向您发送文档链接"></a>Demo——创建 Google文档并通过电子邮件向您发送文档链接</h2><h3 id="创建脚本"><a href="#创建脚本" class="headerlink" title="创建脚本"></a>创建脚本</h3><ol><li><p>访问 script.google.com 打开应用程序脚本编辑器；</p></li><li><p>点击 New project;</p></li><li><p>删除脚本编辑器中的所有代码，并将其粘贴到下方代码中;</p> <pre class="line-numbers language-JavaScript" data-language="JavaScript"><code class="language-JavaScript">/** * 创建一个Google文档，并向当前用户发送一封电子邮件，其中包含该文档的链接。 */function createAndSendDocument() {    try {        // 创建一个名为 'Hello, world!'的文档。        const doc = DocumentApp.create('Hello, world!');        // 获取文档正文部分，然后添加一个段落。        doc.getBody().appendParagraph('This document was created by Google Apps Script.');        // 获取文档的链接。        const url = doc.getUrl();        // 获取用户的电子邮件地址。        const email = Session.getActiveUser().getEmail();        // 获取要用作电子邮件主题行的文档名称。        const subject = doc.getName();        // 将一个新的字符串追加到 "url "变量中，作为邮件正文。        const body = 'Link to your doc: ' + url;        // 发送带有文档链接的电子邮件。        GmailApp.sendEmail(email, subject, body);    } catch (err) {        // 异常处理        console.log('Failed with error %s', err.message);    }}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></li><li><p>点击“保存”图标;</p></li><li><p>点击未命名的项目;</p></li><li><p>输入脚本的名称，然后点击重命名。</p></li></ol><h3 id="运行脚本"><a href="#运行脚本" class="headerlink" title="运行脚本"></a>运行脚本</h3><ol><li><p>点击运行。</p></li><li><p>根据提示为脚本授权。<br> <img src="https://cdn.jsdelivr.net/gh/guomamba/PicGoCDN/img/20230426201411.png" alt="点击查看权限"><br> <img src="https://cdn.jsdelivr.net/gh/guomamba/PicGoCDN/img/20230426201553.png" alt="点击高级"><br> <img src="https://cdn.jsdelivr.net/gh/guomamba/PicGoCDN/img/20230426201745.png" alt="点击转到项目"><br> <img src="https://cdn.jsdelivr.net/gh/guomamba/PicGoCDN/img/20230426201938.png" alt="点击允许"></p></li><li><p>脚本执行完成后，在您的 Gmail 收件箱中查收电子邮件。<br> <img src="https://cdn.jsdelivr.net/gh/guomamba/PicGoCDN/img/20230426202211.png" alt="邮箱查看"></p></li><li><p>打开电子邮件，点击链接即可打开创建的文档。<br> <img src="https://cdn.jsdelivr.net/gh/guomamba/PicGoCDN/img/20230426202339.png" alt="打开文档"></p></li></ol><h2 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h2><ol><li><a href="https://www.google.com/script/start/">https://www.google.com/script/start/</a></li></ol>]]></content>
+      
+      
+      <categories>
+          
+          <category> 工具软件 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> vba </tag>
+            
+            <tag> google </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Qt入门</title>
       <link href="/2023/04/23/qt/"/>
       <url>/2023/04/23/qt/</url>
@@ -220,9 +247,9 @@
       
         <tags>
             
-            <tag> 教学 </tag>
-            
             <tag> vba </tag>
+            
+            <tag> 教学 </tag>
             
         </tags>
       
