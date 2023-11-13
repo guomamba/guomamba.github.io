@@ -6,7 +6,7 @@
   <link href="http://guomamba.github.io/atom.xml" rel="self"/>
   
   <link href="http://guomamba.github.io/"/>
-  <updated>2023-10-25T14:42:01.719Z</updated>
+  <updated>2023-11-13T13:32:29.418Z</updated>
   <id>http://guomamba.github.io/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Modbus</title>
+    <link href="http://guomamba.github.io/2023/10/25/modbus/"/>
+    <id>http://guomamba.github.io/2023/10/25/modbus/</id>
+    <published>2023-10-25T13:55:06.000Z</published>
+    <updated>2023-11-13T13:32:29.418Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;MODBUS通讯协议&quot;&gt;&lt;a href=&quot;#MODBUS通讯协议&quot; class=&quot;headerlink&quot; title=&quot;MODBUS通讯协议&quot;&gt;&lt;/a&gt;MODBUS通讯协议&lt;/h1&gt;&lt;p&gt;Modbus是一种广泛应用于工业自动化和控制系统的通信协议。 它由</summary>
+        
+      
+    
+    
+    
+    <category term="通讯协议" scheme="http://guomamba.github.io/categories/%E9%80%9A%E8%AE%AF%E5%8D%8F%E8%AE%AE/"/>
+    
+    
+    <category term="TCP/IP" scheme="http://guomamba.github.io/tags/TCP-IP/"/>
+    
+    <category term="Qt" scheme="http://guomamba.github.io/tags/Qt/"/>
+    
+    <category term="Python" scheme="http://guomamba.github.io/tags/Python/"/>
+    
+  </entry>
   
   <entry>
     <title>App-Script</title>
@@ -492,31 +521,6 @@
     
     
     <category term="Electron" scheme="http://guomamba.github.io/tags/Electron/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Leetcode romanToInt</title>
-    <link href="http://guomamba.github.io/2021/11/08/leetcode-romantoint/"/>
-    <id>http://guomamba.github.io/2021/11/08/leetcode-romantoint/</id>
-    <published>2021-11-08T07:28:47.000Z</published>
-    <updated>2021-11-08T08:25:00.343Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;罗马数字转整数&quot;&gt;&lt;a href=&quot;#罗马数字转整数&quot; class=&quot;headerlink&quot; title=&quot;罗马数字转整数&quot;&gt;&lt;/a&gt;罗马数字转整数&lt;/h1&gt;&lt;p&gt;罗马数字包含以下七种字符: I， V， X， L，C，D 和</summary>
-        
-      
-    
-    
-    
-    <category term="编程之道" scheme="http://guomamba.github.io/categories/%E7%BC%96%E7%A8%8B%E4%B9%8B%E9%81%93/"/>
-    
-    
-    <category term="Leetcode" scheme="http://guomamba.github.io/tags/Leetcode/"/>
     
   </entry>
   
